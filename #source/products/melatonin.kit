@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Melatonin Plus</title>
+</head>
+
+<body>
+	<div class="products melatonin">
+		<div class='container'>
+			<div class="products__body">
+				<div class="products__content">
+					<div class="products__header">
+						<div class="products__logo">
+							<img src="../img/products/products_logo/melatonin.png" alt="">
+						</div>
+						<div class="products__contains">
+							<h2 class="products__title title-contains">Состав продукта</h2>
+							<ul class="products__list">
+								<li>Мелатонин</li>
+								<li>Эфирное масло лаванды</li>
+								<li>Эфирное масло розы</li>
+							</ul>
+						</div>
+					</div>
+					<div class="products__descr">
+						Пластырь One More™ Melatonin Plus обеспечит вас здоровым сном уже за первую ночь применения, а также
+						поддержит ваш иммунитет при смене сезона, климата и в путешествиях. Активное вещество мелатонин из проникает
+						из пластыря через кожу напрямую в кровь, что обеспечивает высокую усвояемость без вреда для печени.
+					</div>
+					<div class="products__contains-descr">
+						<div class="products__item">
+							<img src="../img/products/melatonin/melatonin.png" alt="">
+							<div>
+								<h3>Мелатонин</h3>
+								Мелатонин регулирует суточные биоритмы в организме человека, а также оказывает мощное антиоксидантное,
+								антистрессовое и противоопухолевое действие, стимулирует иммунитет, отвечает за работу щитовидной и
+								вилочковой железы - «дирижера» иммунной системы, снижает тревожность, улучшает эмоциональное состояние,
+								повышает уровень серотонина,
+							</div>
+						</div>
+						<div class="products__item">
+							<img src="../img/products/melatonin/lavender.png" alt="">
+							<div>
+								<h3>Эфирное масло</h3>
+								Эфирное масло лаванды оказывает релаксирующее действие, устраняет нервное напряжение, а также улучшает
+								кровообращение.
+							</div>
+						</div>
+						<div class="products__item">
+							<img src="../img/products/melatonin/rosee.jpg" alt="">
+							<div>
+								<h3>Эфирное масло розы</h3>
+								Эфирное масло розы обладает гармонизирующим и стабилизирующим действием на эмоциональное состояние,
+								благоприятно влияет на эндокринную систему, оказывает бактерицидное, противовирусное, противогрибковое
+								воздействие, способствует нормализации работы сальных желез, эффективно борется с сухостью кожи, а также
+								избавляет от спазмов и мигрени.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products__images products-images">
+					<div class="container__images ">
+						<img src="../img/products/01.jpg" id="expandedImg">
+					</div>
+					<div class="products-images__row">
+						<div class="products-images__column">
+							<img src="../img/products/01.jpg" alt="Nature" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+						<div class="products-images__column">
+							<img src="../img/products/02.jpg" alt="Snow" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+						<div class="products-images__column">
+							<img src="../img/products/03.jpg" alt="Mountains" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+						<div class="products-images__column">
+							<img src="../img/products/04.jpg" alt="Lights" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+
+		function myFunction(imgs) {
+			var expandImg = document.getElementById("expandedImg");
+			expandImg.src = imgs.src;
+			imgText.innerHTML = imgs.alt;
+			expandImg.parentElement.style.display = "block";
+		};
+
+		function ibg() {
+			if (isIE()) {
+				let ibg = document.querySelectorAll(".ibg");
+				for (var i = 0; i < ibg.length; i++) {
+					if (ibg[i].querySelector('img') && ibg[i].querySelector('img').getAttribute('src') != null) {
+						ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+					}
+				}
+			}
+		}
+		ibg();
+
+
+	</script>
+
+
+</body>
+
+</html>

@@ -1,29 +1,85 @@
 //SLIDERS
-if ($('.main__slider').length > 0) {
-	$('.main__slider').slick({
-		//autoplay: true,
-		fade: true,
-		speed: 1300,
-		infinite: true,
-		dots: true,
-		arrows: false,
-		accessibility: false,
-		slidesToShow: 1,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		//asNavFor:'',
-		//appendDots:
-		//appendArrows:$('.first__slider-arrows .container'),
-		nextArrow: '<button type="button" class="slick-next"></button>',
-		prevArrow: '<button type="button" class="slick-prev"></button>',
-		responsive: [{
-			breakpoint: 768,
-			settings: {}
-		}]
-	});
+if ($(".main__slider").length > 0) {
+  $(".main__slider").slick({
+    //autoplay: true,
+    fade: true,
+    speed: 1300,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    accessibility: false,
+    slidesToShow: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    //asNavFor:'',
+    //appendDots:
+    //appendArrows:$('.first__slider-arrows .container'),
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {},
+      },
+    ],
+  });
 }
-/*
 
+if ($(".slider-certificates").length > 0) {
+  $(".slider-certificates").slick({
+    speed: 1300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: false,
+    arrows: true,
+    accessibility: false,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    touchMove: false,
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
+}
+
+if ($(".content-reviews__slider").length > 0) {
+  $(".content-reviews__slider").slick({
+    //autoplay: true,
+    speed: 1500,
+    // infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: false,
+    dots: true,
+    arrows: false,
+    vertical: false,
+    accessibility: false,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    touchMove: false,
+    //asNavFor:'',
+    //appendDots:
+    //appendArrows:$('.first__slider-arrows .container'),
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {},
+      },
+    ],
+  });
+}
+
+/*
 
 // SLIDER ON MOBILE
 if($('.reviews-object__items').length>0){

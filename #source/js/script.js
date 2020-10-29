@@ -1,3 +1,76 @@
+var arrLang = {
+	'en': {
+		'about': 'About Us',
+		'goods': 'Our products',
+		'reviews': 'Reviews',
+		'certificates': 'Certificates',
+		'business': 'Business',
+		'contacts': 'Contact US',
+		'title1': 'Feel positive changes in your body in 12 hours of using One More ™',
+		'subtitle1': `We took advantage of the healing properties of natural extracts and, using the latest scientific technologies, created
+		high-quality products that can cure chronic diseases and completely heal your
+		the body without stress on the liver. Our healing patches are based on innovative technology
+		‘Transdermal Wave Technology’, which allows active substances
+		penetrate through the skin directly into the blood, protecting the liver from harmful effects.`,
+	},
+	'ru': {
+		'about': 'О компании',
+		'goods': 'Продукция',
+		'reviews': 'Отзывы',
+		'certificates': 'Сертификаты',
+		'business': 'Бизнес',
+		'contacts': 'Контакты',
+		'title1': 'Инновационный подход к оздоровлению вашего организма с помощью лечебных пластырей One More™',
+		'subtitle1': `Мы воспользовались целебными свойствами природных экстрактов и с помощью новейших научных технологий создали
+		высококачественную продукцию, которая способна вылечить хронические болезни и полностью оздоровить ваш
+		организм без нагрузки на печень. Наши лечебные пластыри разработаны на основе инновационной технологии
+		‘Transdermal Wave Technology’ (трансдермальная волновая технология), что позволяет активным веществам
+		проникать через кожу напрямую в кровь, защищая печень от вредоносного воздействия.`,
+	},
+	'kz': {
+		'about': 'казахский',
+		'goods': 'казахский',
+		'reviews': 'казахский',
+		'certificates': 'казахский',
+		'business': 'казахский',
+		'contacts': 'казахский',
+		'title1': 'На казахском',
+		'subtitle1': `Мы воспользовались целебными свойствами природных экстрактов и с помощью новейших научных технологий создали
+		высококачественную продукцию, которая способна вылечить хронические болезни и полностью оздоровить ваш
+		организм без нагрузки на печень. Наши лечебные пластыри разработаны на основе инновационной технологии
+		‘Transdermal Wave Technology’ (трансдермальная волновая технология), что позволяет активным веществам
+		проникать через кожу напрямую в кровь, защищая печень от вредоносного воздействия.`,
+	}
+};
+
+$(function () {
+	$('.translate').click(function () {
+		var lang = $(this).attr('id');
+
+		$('.lang').each(function (index, item) {
+			$(this).text(arrLang[lang][$(this).attr('key')]);
+		});
+	});
+});
+
+
+
+
+
+
+
+
+let userIcon = document.querySelector(".lang-header__icon"),
+	userMenu = document.querySelector(".lang-header__menu");
+userIcon.addEventListener("click", (function (e) {
+	userMenu.classList.toggle("_active"),
+		userIcon.classList.toggle("_active");
+})),
+	document.documentElement.addEventListener("click", (function (e) {
+		e.target.closest(".lang-header") || userMenu.classList.remove("_active") || userIcon.classList.remove("_active");
+	}));
+
+
 let offset = $('.header-body').offset().top;
 $(window).on('scroll', function () {
 
@@ -9,6 +82,49 @@ $(window).on('scroll', function () {
 		$('.header').removeClass('fixed');
 	}
 });
+
+
+
+const animItems = document.querySelectorAll('._anim-items');
+
+if (animItems.length > 0) {
+	window.addEventListener('scroll', animOnScroll);
+	function animOnScroll() {
+		for (let index = 0; index < animItems.length; index++) {
+			const animItem = animItems[index];
+			const animItemHeight = animItem.offsetHeight;
+			const animItemOffset = offsetAnim(animItem).top;
+			const animStart = 4;
+
+			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+			if (animItemHeight > window.innerHeight) {
+				animItemPoint = window.innerHeight - window.innerHeight / animStart;
+			}
+
+			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+				animItem.classList.add('_active');
+			} else {
+				if (!animItem.classList.contains('_anim-no-hide')) {
+					animItem.classList.remove('_active');
+				}
+			}
+		}
+	}
+	function offsetAnim(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	}
+
+	setTimeout(() => {
+		animOnScroll();
+	}, 300);
+};
+
+
+
+
 
 
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
@@ -31,12 +147,12 @@ if (isMobile.iOS()) {
 
 let iconMenu = document.querySelector(".icon-menu");
 let body = document.querySelector("body");
-let menuBody = document.querySelector(".menu__body");
+let headerMenu = document.querySelector(".header-menu");
 if (iconMenu) {
 	iconMenu.addEventListener("click", function () {
 		iconMenu.classList.toggle("active");
 		body.classList.toggle("lock");
-		menuBody.classList.toggle("active");
+		headerMenu.classList.toggle("active");
 	});
 }
 

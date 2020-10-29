@@ -4,12 +4,10 @@
 <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,11 +16,34 @@
 	<div class="container">
 		<div class="header-body">
 			<div class="header-body__column">
+				<a href="#" class="header-body-menu__link header-body-menu__link_social">
+					<svg fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" height="20">
+						<path
+							d="m75 512h167v-182h-60v-60h60v-75c0-41.355469 33.644531-75 75-75h75v60h-60c-16.542969 0-30 13.457031-30 30v60h87.292969l-10 60h-77.292969v182h135c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-105v-122h72.707031l20-120h-92.707031v-30h90v-120h-105c-57.898438 0-105 47.101562-105 105v45h-60v120h60v122h-137c-24.8125 0-45-20.1875-45-45zm0 0" />
+					</svg>
+				</a>
+				<a href="#" class="header-body-menu__link header-body-menu__link_social">
+					<svg fill="#fff" viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg" height="20">
+						<path
+							d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0" />
+						<path
+							d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0" />
+						<path
+							d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" />
+					</svg>
+				</a>
+			</div>
+			<div class="header-body__column">
 				<nav class="header-body-menu">
 					<ul class="header-body-menu-list">
-						<li><a href="#" class="header-body-menu__link goto">О компании</a></li>
-						<li><a href="#" class="header-body-menu__link goto">Продукция</a></li>
-						<li><a href="#" class="header-body-menu__link goto">Отзывы</a></li>
+						<li>
+
+						</li>
+						<li></li>
+						<li><a href="#about" class="header-body-menu__link goto lang" key="about">О
+								компании</a></li>
+						<li><a href="#goods" class="header-body-menu__link goto lang" key="goods">Продукция</a></li>
+						<li><a href="#reviews" class="header-body-menu__link goto lang" key="reviews">Отзывы</a></li>
 
 					</ul>
 				</nav>
@@ -35,95 +56,645 @@
 			<div class="header-body__column">
 				<nav class="header-body-menu header-body-menu--right">
 					<ul class="header-body-menu-list">
-						<li><a href="#" class="header-body-menu__link goto">Сертификаты</a></li>
-
-						<li><a href="#" class="header-body-menu__link goto">Бизнес</a></li>
-						<li><a href="#" class="header-body-menu__link goto">Контакты</a></li>
-
+						<li><a href="#certificate" class="header-body-menu__link goto lang" key="certificates">Сертификаты</a></li>
+						<li><a href="#business" class="header-body-menu__link goto lang" key="business">Бизнес</a></li>
+						<li><a href="#contacts" class="header-body-menu__link goto lang" key="contacts">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
+			<div class="header-body__column">
+				<div class="header__lang lang-header">
+					<div class="lang-header__icon">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+
+						<svg fill="#fff" height="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+							style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M257.297,0.004c-0.018,0-0.035,0-0.053-0.001C257.162,0.003,257.081,0,257,0c-0.012,0-0.024,0-0.036,0
+c-0.032,0-0.065,0.001-0.097,0.001C115.786,0.073,0,114.252,0,255c0,34.416,6.855,67.932,20.376,99.618
+c26.177,61.348,75.527,110.772,137.005,137.005c31.682,13.519,65.194,20.375,99.605,20.376c0.009,0,0.018,0.002,0.027,0.002
+c0.023,0,0.047-0.002,0.07-0.003C398.634,511.953,512,395.326,512,255C512,114.274,398.242,0.163,257.297,0.004z M207.317,35.443
+C181.736,59.695,160.835,88.099,145.096,120H75.515C107.426,77.96,153.837,47.325,207.317,35.443z M56.286,149.8h75.991
+c-10.493,28.747-16.697,59.387-18.298,90.2H30.517C32.674,207.672,41.749,176.993,56.286,149.8z M56.851,362
+c-14.89-27.74-24.173-58.913-26.342-92h83.368c1.432,31.496,7.682,62.631,18.402,92H56.851z M76.129,392h68.967
+c15.709,31.842,36.581,60.236,62.154,84.494C154.137,464.571,108.007,433.983,76.129,392z M143.921,270h98.078v92h-77.373
+C152.648,333.142,145.53,302.081,143.921,270z M242.001,467.115C216.497,445.88,195.351,420.38,179.27,392h62.73V467.115z M242.001,240h-97.979c1.799-31.373,8.876-61.742,20.606-90h77.373V240z M242.001,120h-62.729
+c16.08-28.38,37.226-53.88,62.729-75.116V120z M455.945,150c14.41,27.193,23.404,57.672,25.543,90H400.02
+c-1.601-30.813-7.805-61.253-18.298-90H455.945z M436.887,120h-67.982c-15.697-31.817-36.546-60.189-62.088-84.433
+C359.585,47.541,405.369,78.11,436.887,120z M272.001,44.89c25.503,21.236,46.657,46.73,62.737,75.11h-62.737V44.89z M272,150
+h77.392c11.728,28.256,18.789,58.629,20.588,90H272V150z M370.088,269.8c-1.608,32.079-8.719,63.344-20.696,92.2h-77.392v-92.2
+H370.088z M272.001,467.11V391.8h62.737C318.658,420.18,297.504,445.873,272.001,467.11z M306.885,476.368
+c25.491-24.21,46.326-52.757,62.019-84.568h67.373C404.796,433.63,359.29,464.353,306.885,476.368z M381.723,362
+c10.72-29.369,16.97-60.704,18.402-92.2h81.372c-2.15,33.087-11.351,64.46-26.11,92.2H381.723z" />
+								</g>
+							</g>
+						</svg>
+
+					</div>
+					<ul class="lang-header__menu">
+						<li class="lang-header__item"><button class="translate" id="ru"><img
+									src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg" alt="Russian" width="30"
+									height="20" />
+							</button></li>
+						<li class="lang-header__item"><button class="translate" id="kz"> <img
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/1280px-Flag_of_Kazakhstan.svg.png"
+									alt="Kazakh" width="30" height="20" /></button>
+						</li>
+						<li class="lang-header__item">
+							<button class="translate" id="en">
+								<img
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png"
+									alt="English" width="30" height="20" />
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+
 		</div>
 		<div class="menu__icon icon-menu">
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<div class="header__menu"></div>
+		<div class="header-menu"></div>
 	</div>
 </header>		<section class="main main__slider" id="main">
 			<div class="main__body ibg slider__item">
-				<img data-lazy="img/main__slider/12.jpg" alt="" />
-				<div class='container'>
-					<div class="main__content">
-						<h1 class="main__title">Современная замена таблеткам</h1>
-						<div class="main__subtitle">
-							Лечебные пластыри One More™ разработаны на основе инновационной технологии ‘Transdermal Wave Technology’
-							(трансдермальная волновая технология),<br> что позволяет активным веществам проникать через кожу напрямую
-							в
-							кровь, защищая печень от вредоносного воздействия.</div>
-						<a class="main__btn btn" href="">узнать подробнее</a>
+				<img data-lazy="img/main__slider/01.jpg" alt="" />
+				<div class="main__content">
+					<h1 class="main__title title">Зарабатывай от $2000 в неделю уже сейчас, <br> став нашим дистрибьютором</h1>
+					<div class="main__subtitle">
+						Компания One More International распределяет 86% доходов среди своих
+						дистрибьюторов, <br> что делает ее самой прибыльной компанией в сфере сетевого маркетинга в мире. <br>
+						Вот уже 6 лет
+						наши дистрибьюторы получают еженедельный доход от $2000,<br> рекомендуя нашу продукцию,
+						разработанную по новейшим технологиям.
 					</div>
+					<a class="main__btn btn" href=""><span>Получить консультацию</span></a>
 				</div>
 			</div>
 			<div class="main__body ibg slider__item">
-				<img data-lazy="img/main__slider/06.jpg" alt="" />
-				<div class='container'>
-					<div class="main__content">
-						<h2 class="main__title">Работа в удовольствие</h2>
-						<div class="main__subtitle main__subtitle_mini">
-							Компания One More International распределяет 86% доходов среди своих
-							дистрибьюторов, являясь самой прибыльной компанией в сфере сетевого маркетинга.
-							Вот уже 6 лет наши дистрибьюторы получают высокий стабильный доход, рекомендуя высококачественную
-							лечебную
-							продукцию, разработанную в Южной Корее по уникальным инновационным технологиям.</div>
-						<a class="main__btn btn" href="">узнать подробнее</a>
+				<img data-lazy="img/main__slider/02.jpg" alt="" />
+				<div class="main__content">
+					<h2 class="main__title title">Избавься от лишнего веса за 1 месяц<br> при помощи пластыря размером <br> с
+						почтовую
+						марку
+					</h2>
+					<div class="main__subtitle">
+						One More™ Slim Style - это небольшой пластырь размером 3х3 см, который быстро поможет вам справиться
+						с
+						перееданием и ускорить метаболизм, тем самым позволяя вам стройнеть естественным путем без диет и
+						усилий.
+						<br>
+						Имея в своем составе ингридиенты исключительно натурального происхождения
+						<!-- , такие как спирулина,
+						экстракты
+						имбиря и зеленого чая -->, SlimStyle был создан при помощи нашей инновационной технологии "Transdermal Wave
+						Technology".
+						<br>Таким образом, мы гарантируем высокую эффективность и безопасность пластырей
+						SlimStyle.
 					</div>
+					<a class="main__btn btn" href=""><span>посмотреть отзывы</span> </a>
 				</div>
 			</div>
 			<div class="main__body ibg slider__item">
-				<img data-lazy="img/main__slider/11.jpg" alt="" />
-				<div class='container'>
-					<div class="main__content">
-						<h1 class="main__title">Вдохновение от природы</h1>
-						<div class="main__subtitle">
-							Все экстракты, входящие в состав продукции One More™, вдохновлены философией традиционной корейской
-							медицины и имеют 100% натуральное происхождение. Будь то стволовые клетки зелёного чая, экстракт
-							водорослей или красный женьшень, каждый ингредиент был тщательно отобран и бережно обработан в нашей
-							лаборатории в Южной Корее.</div>
-						<a class="main__btn btn" href="">узнать подробнее</a>
+				<img data-lazy="img/main__slider/03.jpg" alt="" />
+				<div class="main__content">
+					<h2 class="main__title title lang" key="title1"> Инновационный подход
+						<br> к оздоровлению вашего организма
+						<br> с помощью лечебных пластырей One More™
+					</h2>
+					<div class="main__subtitle lang" key="subtitle1">
+						Мы воспользовались самыми целебными свойствами природных экстрактов
+						<br> и с помощью новейших научных технологий создали
+						уникальные лечебно-профилактические пластыри,
+						<br> которые запустят полное оздоровление вашего
+						организма уже на 12-ый час применения.
+						<br> Наши лечебные
+						пластыри разработаны на основе инновационной технологии
+						‘Transdermal Wave Technology’ (трансдермальная волновая технология), что позволяет активным веществам
+						проникать через кожу напрямую в кровь, защищая печень от вредоносного воздействия.
 					</div>
+					<a class="main__btn btn" href=""><span>узнать подробнее</span></a>
 				</div>
 			</div>
 		</section>
 
 		<section class="about" id="about">
-			<div class='container'>
-				<h2 class="about__title">О компании</h2>
-				<div class="about__text">
-					One More International официально начала работу в июне 2014 года. One More International, которая распределяет
-					86% своих доходов обратно своим дилерам, теперь является самой прибыльной компанией сетевого маркетинга в
-					мире.
+			<!-- <div class='container'> -->
+			<div class="about__body">
+				<div class="about__image _anim-items _anim-no-hide">
+					<img src="img/about/onemore.jpg" alt="">
 				</div>
+				<div class="about__content _anim-items _anim-no-hide">
+					<h2 class="about__title title">О компании</h2>
+					<div class="about__text">
+						One More International - это международная компания со 100% внутренним капиталом, основанная в июне 2014
+						года
+						в городе Стамбул, Турция. Наша компания распределяет 86% доходов среди своих дистрибьюторов, что делает ее
+						самой прибыльной компанией в сфере сетевого маркетинга в мире.
+						<ul class="about__list">
+							<li>Международная сертификация (ISO 10002: 2014)</li>
+							<li>Более 3 миллионов пользователей продукции</li>
+							<li>Уровень удовлетворенности продукцией 98%</li>
+							<li>Экспорт продукции в более чем 90 стран</li>
+							<li>Более 150 000 официальных дистрибьюторов</li>
+							<li>Головной офис в Эсеньюрте, Стамбул</li>
+							<li>Второй центр - в Меджидиекёй, европейский центр - в Роттердаме,
+								Нидерланды</li>
+						</ul>
+					</div>
+					<button type="submit" class="form__btn btn">Стать дистрибьютором</button>
+				</div>
+
+
 			</div>
+			<!-- </div> -->
 		</section>
 
-		<section class="goods">
+		<section class="goods" id="goods">
 			<div class="container">
 				<div class="goods__body">
-					<h2 class="goods__title">Наши продукты</h2>
+					<h2 class="goods__title title">Наши продукты</h2>
 					<div class="goods__row">
 						<div class="goods__column">
 							<div class="goods__item item-goods">
-								<div class="item-goods__image"></div>
-								<div class="item-goods__title">Пластырь</div>
-								<div class="item-goods__descr">Корейские пластыри нового поколения</div>
+								<div class="item-goods__image">
+									<img src="img/products/01.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">Sornie</h3>
+								<div class="item-goods__descr">Коллагеновые патчи от Lumiere Sornie надолго сохранят молодость и красоту
+									вашей кожи за счет своего богатого натурального состава.</div>
 							</div>
+							<a href="goods/sornie.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
+						</div>
+						<div class="goods__column">
+							<div class="goods__item item-goods">
+								<div class="item-goods__image">
+									<img src="img/products/05.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">Slim Style</h3>
+								<div class="item-goods__descr">One More™ Slim Style - это небольшой пластырь размером 3х3 см, который
+									быстро поможет вам справиться с перееданием и ускорить метаболизм, тем самым позволяя вам стройнеть
+									естественным путем без диет и усилий. </div>
+							</div>
+							<a href="goods/slim-style.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
+						</div>
+
+						<div class="goods__column">
+							<div class="goods__item item-goods">
+								<div class="item-goods__image">
+									<img src="img/products/04.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">Omevia</h3>
+								<div class="item-goods__descr">Пластыри One More™OMEVIA созданы для продления вашей молодости как
+									внешне, так и изнутри.</div>
+							</div>
+							<a href="goods/omevia.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
+						</div>
+						<div class="goods__column">
+							<div class="goods__item item-goods">
+								<div class="item-goods__image">
+									<img src="img/products/03.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">B12 Plus</h3>
+								<div class="item-goods__descr">One More™ B12 Plus уже за 1 неделю обеспечит ваш организм всеми
+									необходимыми витаминами без таблеток и инъекций.</div>
+							</div>
+							<a href="goods/B12.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
+						</div>
+
+						<div class="goods__column">
+							<div class="goods__item item-goods">
+								<div class="item-goods__image">
+									<img src="img/products/06.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">Melatonin Plus</h3>
+								<div class="item-goods__descr">Пластырь One More™ Melatonin Plus обеспечит вас здоровым сном уже за
+									первую ночь применения, а также поддержит ваш иммунитет при смене сезона, климата и в путешествиях.
+								</div>
+							</div>
+							<a href="goods/Melatonin.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
+						</div>
+
+						<div class="goods__column">
+							<div class="goods__item item-goods">
+								<div class="item-goods__image">
+									<img src="img/products/02.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">Painless Night GLU</h3>
+								<div class="item-goods__descr">Пластыри One More™ Painless Night GLU уже на 12-ый час применения
+									облегчат боль в суставах, наладят все биологические процессы, а также полностью избавят вас от
+									дискомфорта в организме, без инъекций, таблеток и прочей химии. </div>
+							</div>
+							<a href="goods/Painless-night.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
+						</div>
+
+						<div class="goods__column">
+							<div class="goods__item item-goods">
+								<div class="item-goods__image">
+									<img src="img/products/07.jpg" alt="">
+								</div>
+								<h3 class="item-goods__title">Dekamin</h3>
+								<div class="item-goods__descr">Пластыри One More™ Dekamin уже на 12-ый час применения
+									облегчат боль в суставах, наладят все биологические процессы, а также полностью избавят вас от
+									дискомфорта в организме, без инъекций, таблеток и прочей химии. </div>
+							</div>
+							<a href="goods/Painless-night.html" target="_blank" class="btn item-goods__btn"><span>Узнать
+									преимущества</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
+		<section class="reviews" id="reviews">
+			<div class=" reviews__content content-reviews">
+				<h2 class="content-reviews__title">Отзывы</h2>
+				<div class="content-reviews__body content-reviews__slider">
+					<div class="content-reviews__item item-reviews">
+						<div class="item-reviews__image">
+							<img src="img/reviews/ava-1.jpg" alt="">
+						</div>
+						<div class="item-reviews__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eveniet, doloremque ipsa quam, odit a
+							minus expedita ex illum porro laudantium adipisci beatae velit optio dolorem aperiam recusandae. Ducimus
+							maxime iste cupiditate eius similique magni, explicabo
+						</div>
+					</div>
+					<div class="content-reviews__item item-reviews">
+						<div class="item-reviews__image">
+							<img src="img/reviews/ava-1.jpg" alt="">
+						</div>
+						<div class="item-reviews__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eveniet, doloremque ipsa quam, odit a
+							minus expedita ex illum porro laudantium adipisci beatae velit optio dolorem aperiam recusandae. Ducimus
+							maxime iste cupiditate eius similique magni, explicabo accusantium corporis sequi nam consectetur est
+							voluptatem temporibus! Pariatur earum neque natus iste eius!ntium adipisci beatae velit optio dolorem
+							aperiam recusandae. Ducimus
+							maxime iste cupiditate eius similique magni, explicabo accusantium corporis sequi nam consectetur est
+							voluptatem temporibus! Pariatur earum neque natus iste eius!
+						</div>
+					</div>
+					<div class="content-reviews__item item-reviews">
+						<div class="item-reviews__image">
+							<img src="img/reviews/ava-1.jpg" alt="">
+						</div>
+						<div class="item-reviews__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eveniet, doloremque ipsa quam, odit a
+							minus expedita ex illum porro laudantium adipisci beatae velit optio dolorem aperiam recusandae. Ducimus
+							maxime iste cupiditate eius similique magni, explicabo accusantium corporis sequi nam consectetur est
+							voluptatem temporibus! Pariatur earum neque natus iste eius!
+						</div>
+					</div>
+					<div class="content-reviews__item item-reviews">
+						<div class="item-reviews__image">
+							<img src="img/reviews/ava-1.jpg" alt="">
+						</div>
+						<div class="item-reviews__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eveniet, doloremque ipsa quam, odit a
+							minus expedita ex illum porro laudantium adipisci beatae vel
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="certificate" id="certificate">
+			<div class='container'>
+				<div class="certificate__body">
+					<h2 class="certificate__title title">Сертификаты</h2>
+					<p class="certificate__subtitle">Вся наша продукция прошла строгий контроль качества, соответственно, мы
+						гарантируем ее максимальную эффективность, безопасность и качество. Предлагаем Вам ознакомиться с
+						сертификатами, которые мы получили от самых авторитетных организаций Европы и США, в том числе от Всемирной
+						Организации Здравоохранения, ООН, FDA и др.</p>
+					<div class="certificate__gallery gallery-certificate gallery slider-certificates">
+						<div class="gallery-certificate__item">
+							<a href="img/certif/01.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/01.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат GMP указывает на то, что производственный процесс One More International соответствует всем
+								требования одноименного международного стандарта. Следовательно, выпускаемые One More International
+								лекарственные средства безопасны и качественны.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/02.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/02.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат Halal подтверждает пригодность пищевых продуктов для употребления людьми, исповедующими
+								Ислам. Здесь отсутствует даже малая доля таких компонентов, как: алкоголь, никотин, наркотические
+								средства, кровь или свинина. Не содержатся и любые другие вещества, на которые наложен запрет в
+								Священном Коране.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/02-1.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/02-1.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат Halal подтверждает пригодность пищевых продуктов для употребления людьми, исповедующими
+								Ислам. Здесь отсутствует даже малая доля таких компонентов, как: алкоголь, никотин, наркотические
+								средства, кровь или свинина. Не содержатся и любые другие вещества, на которые наложен запрет в
+								Священном Коране.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/03.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/03.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат Doping Free подтверждает факт отсутствия допинговых веществ в следующих продуктах: One More
+								B12 Plus, One More OMEVIA, One More Melatonin Plus, One More Slim Style.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/04.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/04.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат Doping Free подтверждает факт отсутствия допинговых веществ в следующих продуктах: One More
+								Painless Night.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/05.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/05.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								OneMore International - первая компания сетевого маркетинга, которая вошла в список Глобальных
+								поставщиков ООН. Получен во время пандемии в мае 2020 года.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/06.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/06.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								OneMore International - первая компания сетевого маркетинга, признанная 27 различными наднациональными
+								учреждениями, включая ВОЗ (Всемирную организацию здравоохранения). Получен во время пандемии в мае 2020
+								года.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/08.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/08.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат на производство и продажу продукции One More зарубежом.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/07.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/07.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Патент на марку One More International.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/09.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/09.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Патент на производство One More Melatonin Plus.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/10.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/10.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Патент на производство One More Slim Style.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/11.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/11.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+
+								Патент на производство One More Painless Night.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/13.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/13.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Патент на производство One More B12 Plus.
+							</div>
+						</div>
+						<div class="gallery-certificate__item gallery-certificate__item_c">
+							<a href="img/certif/12.jpeg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/12.jpeg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат на свободную продажу продукции One More.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/14.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/14.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								ЕС Декларация Соответствия (EU Declaration of Conformity, EC Declaration of Conformity) подтверждает,
+								что продукция One More International безопасна и была разработана и изготовлена с соблюдением основных
+								требований гармонизированных стандартов европейских норм.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/15.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/15.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат ISO 9001 свидетельствует о наличии системы менеджмента качества на предприятии One More
+								International, внедренной в соответствии с положениями и требованиями международного стандарта ISO
+								9001-2015.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/16.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/16.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат ISO 10002 свидетельствует о наличии системы менеджмента качества на предприятии One More
+								International, внедренной в соответствии с положениями и требованиями международного стандарта ISO
+								10002-2018.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/17.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/17.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат ISO/IEC 20000-1 свидетельствует о наличии системы менеджмента качества на предприятии One
+								More International, внедренной в соответствии с положениями и требованиями международного стандарта 
+								ISO/IEC 20000-1:2011.
+							</div>
+						</div>
+						<div class="gallery-certificate__item">
+							<a href="img/certif/18.jpg" class=" gallery-certificate__link _anim-items _anim-no-hide">
+								<img src="img/certif/18.jpg" alt="" />
+							</a>
+							<div class="gallery-certificate__text">
+								Сертификат ISO 27001 свидетельствует о наличии системы менеджмента качества на предприятии One More
+								International, внедренной в соответствии с положениями и требованиями международного стандарта ISO
+								27001-2013.
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="business" id="business">
+			<div class='container'>
+				<div class="business__body">
+					<h2 class="business__title title">Бизнес с нами</h2>
+					<div class="business__subtitle"> One More International - это самая прибыльная компания в сфере сетевого
+						маркетинга в мире. Наша компания
+						распределяет 86% доходов среди своих дистрибьюторов. Присоединяйтесь к нашей команде сегодня и увеличьте
+						свой
+						доход до $2000 в неделю и выше. Рекомендуя продукцию One More, вы гарантированно улучшите качество жизни
+						ваших
+						клиентов, при этом получая стабильный доход по системе “9 точек оплаты”:
+						<ul class="business__list">
+							<li>Бонус быстрого старта</li>
+							<li>Однолинейный цикличный бонус</li>
+							<li>3D бонус</li>
+							<li> 4*4 бонус</li>
+							<li>Командный бонус</li>
+							<li>Соответствующий бонус</li>
+							<li>Бонус за денежный ранг</li>
+							<li>Мировой бассейн</li>
+							<li>Автомобильный бонус</li>
+						</ul>
+					</div>
+
+					<p class="business__cta">Оставьте свои контакты - мы перезвоним и с удовольствием расскажем вам подробности.
+					</p>
+
+					<form action="" class="business__form subscribe-form">
+						<input type="text" name="name" placeholder="Имя" class="subscribe-form__field">
+						<input type="email" name="email" placeholder="Email" class="subscribe-form__field">
+						<input type="tel" name="tel" placeholder="Номер телефона" class="subscribe-form__field">
+						<button class="subscribe-form__btn">оставить заявку</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="contacts" id="contacts">
+			<div class="contacts__body">
+				<div class="contacts__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d46524.224507547704!2d76.84096!3d43.2144384!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1602426736053!5m2!1sru!2skz"
+						width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+						tabindex="0"></iframe>
+				</div>
+				<div class="contacts__info info-contacts">
+					<address class="info-contacts__address info-contacts__item">
+						<svg fill="#fff" width="25" id="Layer_1" enable-background="new 0 0 512 512" height="25"
+							viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path
+									d="m256.001 512c-11.176 0-21.184-5.796-26.77-15.505-.059-.102-.116-.205-.173-.308l-126.962-232.386c-30.306-55.471-29.437-121.312 2.325-176.124 31.073-53.624 86.265-86.385 147.639-87.637 2.622-.054 5.258-.054 7.878 0 61.375 1.252 116.567 34.013 147.641 87.637 31.762 54.812 32.631 120.652 2.325 176.124l-126.962 232.386c-.057.103-.114.206-.173.308-5.585 9.708-15.592 15.505-26.768 15.505zm-.001-480c-1.099 0-2.195.011-3.289.033-50.099 1.022-95.185 27.821-120.604 71.688-26.107 45.055-26.829 99.162-1.93 144.736l125.823 230.3 125.822-230.299c24.899-45.575 24.178-99.682-1.931-144.737-25.419-43.866-70.505-70.666-120.604-71.688-1.091-.022-2.188-.033-3.287-.033z" />
+								<path
+									d="m256 232c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72zm0-112c-22.056 0-40 17.944-40 40s17.944 40 40 40 40-17.944 40-40-17.944-40-40-40z" />
+							</g>
+						</svg>
+						Адрес компании
+					</address>
+					<a href="" class="info-contacts__phone info-contacts__item">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg fill="#fff" width="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.076 512.076"
+							style="enable-background:new 0 0 512.076 512.076;" xml:space="preserve">
+							<g transform="translate(-1 -1)">
+								<g>
+									<g>
+										<path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818
+				c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453
+				l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646
+				C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539
+				c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92
+				c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315
+				C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173
+				c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061
+				l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579
+				l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379
+				c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801
+				c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z" />
+										<path d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+				c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z" />
+										<path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533
+				c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533
+				S286.448,137.59,291.161,137.59z" />
+										<path d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533
+				c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z" />
+									</g>
+								</g>
+							</g>
+						</svg>
+						8777777777
+					</a>
+					<a href="" class="info-contacts__mail info-contacts__item">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg fill="#fff" width="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+							style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
+				C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
+				L338.213,256L482,112.212V399.787z" />
+								</g>
+							</g>
+						</svg>
+						example@mail.com
+					</a>
+					<div class="info-contacts__item info-contacts__social">
+						<a href="#" class="">
+							<svg fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" height="20">
+								<path
+									d="m75 512h167v-182h-60v-60h60v-75c0-41.355469 33.644531-75 75-75h75v60h-60c-16.542969 0-30 13.457031-30 30v60h87.292969l-10 60h-77.292969v182h135c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-105v-122h72.707031l20-120h-92.707031v-30h90v-120h-105c-57.898438 0-105 47.101562-105 105v45h-60v120h60v122h-137c-24.8125 0-45-20.1875-45-45zm0 0" />
+							</svg>
+						</a>
+						<a href="#" class="">
+							<svg fill="#fff" viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg" height="20">
+								<path
+									d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0" />
+								<path
+									d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0" />
+								<path
+									d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
 <footer class="footer">
 	<div class='container'>
 		<div class="footer__row">
@@ -164,10 +735,7 @@
 		</div>
 	</div>
 </div><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
 <script src="js/vendors.js"></script>
-<script src="js/main.js"></script>
-<script src="js/custom.js" ></script>
-</body>
+<script src="js/main.js"></script></body>
 
 </html>

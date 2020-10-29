@@ -1,0 +1,270 @@
+$color-omevia: #92c8e9;
+$color-sornie: #b48d3f;
+$color-painless: #0b9444;
+$color-b12: #ef3e36;
+$color-slim: #d91b5c;
+$color-melatonin: #ee1d99;
+
+.products {
+	min-height: 100vh;
+	&__body {
+		height: 100%;
+		width: 100%;
+		display: flex;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		width: 90%;
+		display: inline-block;
+		font-size: 25px;
+		border-bottom: 3px solid $color-omevia;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+		letter-spacing: 7.5px;
+	}
+
+	&__contains {
+		width: 100%;
+		margin-left: 50px;
+		h2 {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+		&-descr {
+			font-size: 16px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		li {
+			position: relative;
+			font-size: 15px;
+			margin-bottom: 10px;
+			line-height: 20px;
+			padding-left: 30px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 25px;
+				background: url("../img/products/omevia/list-item__bg.svg") center no-repeat;
+			}
+		}
+	}
+
+	&__logo {
+		width: 400px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&__title {
+		margin: 50px 0px 50px;
+		font-size: 45px;
+	}
+
+	&__descr {
+		padding: 30px;
+		background-color: #92c8e9;
+		color: #fff;
+		font-size: 18px;
+		margin: 25px 0px 30px;
+		line-height: 22px;
+		font-weight: 700;
+		font-style: italic;
+		border-radius: 7px;
+	}
+
+	&__images {
+		flex: 0 0 50%;
+		border-radius: 7px;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		div {
+			flex: 0 0 75%;
+			padding: 0px 20px;
+		}
+		h3 {
+			margin-bottom: 15px;
+			font-size: 22px;
+			color: #92c8e9;
+		}
+		img {
+			flex: 0 0 25%;
+			max-width: 150px;
+			object-fit: contain;
+		}
+	}
+}
+
+.products-images {
+	&__row {
+		display: flex;
+		justify-self: space-between;
+	}
+
+	&__column {
+		flex: 0 0 25%;
+		padding: 10px;
+		img {
+			border-radius: 7px;
+			opacity: 0.8;
+			cursor: pointer;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* The expanding image container */
+.container__images {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	padding: 10px 10px 25px;
+	img {
+		border-radius: 7px;
+		overflow: hidden;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
+}
+
+.sornie .products {
+	&__title {
+		border-color: $color-sornie;
+	}
+
+	&__list {
+		li {
+			&::before {
+				background-image: url("../img/products/sornie/list-item__bg.svg");
+			}
+		}
+	}
+
+	&__descr {
+		background-color: $color-sornie;
+	}
+
+	&__item {
+		h3 {
+			color: $color-sornie;
+		}
+
+		&:nth-child(5) {
+			img {
+				max-width: 120px;
+			}
+		}
+	}
+}
+
+.painless .products {
+	&__title {
+		border-color: $color-painless;
+	}
+
+	&__list {
+		li {
+			&::before {
+				background-image: url("../img/products/painless/list-item__bg.svg");
+			}
+		}
+	}
+	&__descr {
+		background-color: $color-painless;
+	}
+	&__item {
+		h3 {
+			color: $color-painless;
+		}
+	}
+}
+
+.b12 .products {
+	&__title {
+		border-color: $color-b12;
+	}
+
+	&__list {
+		li {
+			&::before {
+				background: url("../img/products/b12/list-item__bg.svg");
+			}
+		}
+	}
+	&__descr {
+		background-color: $color-b12;
+	}
+	&__item {
+		h3 {
+			color: $color-b12;
+		}
+	}
+}
+
+.slim .products {
+	&__title {
+		border-color: $color-slim;
+	}
+
+	&__list {
+		li {
+			&::before {
+				background-image: url("../img/products/slim/list-item__bg.svg");
+			}
+		}
+	}
+	&__descr {
+		background-color: $color-slim;
+	}
+	&__item {
+		h3 {
+			color: $color-slim;
+		}
+	}
+}
+
+.melatonin .products {
+	&__title {
+		border-color: $color-melatonin;
+	}
+
+	&__list {
+		li {
+			&::before {
+				background-image: url("../img/products/melatonin/list-item__bg.svg");
+			}
+		}
+	}
+	&__descr {
+		background-color: $color-melatonin;
+	}
+	&__item {
+		h3 {
+			color: $color-melatonin;
+		}
+	}
+}
