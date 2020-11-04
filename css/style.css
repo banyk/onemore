@@ -1145,6 +1145,12 @@ body.ie .ibg img {
 	height: 50px;
 	background: url("../img/icons/slider__arrow.svg") center/cover no-repeat;
 }
+@media (max-width: 500px) {
+	.slider-certificates .slick-arrow {
+		width: 25px;
+		height: 40px;
+	}
+}
 
 /* Стрелка влево */
 .slider-certificates .slick-arrow.slick-prev {
@@ -1153,10 +1159,20 @@ body.ie .ibg img {
 	    -ms-transform: rotate(180deg);
 	        transform: rotate(180deg);
 }
+@media (max-width: 500px) {
+	.slider-certificates .slick-arrow.slick-prev {
+		left: -10px;
+	}
+}
 
 /* Стрелка вправо */
 .slider-certificates .slick-arrow.slick-next {
 	right: -40px;
+}
+@media (max-width: 500px) {
+	.slider-certificates .slick-arrow.slick-next {
+		right: -10px;
+	}
 }
 
 .popup {
@@ -1968,7 +1984,8 @@ body.ie .ibg img {
 }
 @media (max-width: 768px) {
 	.about {
-		padding: 50px 0 40px 0;
+		padding: 20px 0;
+		margin-top: 30px;
 	}
 }
 .about__body {
@@ -2098,7 +2115,7 @@ body.ie .ibg img {
 }
 @media (max-width: 768px) {
 	.goods {
-		padding: 40px 0 0px;
+		padding: 60px 0 0px;
 	}
 }
 .goods__body {
@@ -2121,7 +2138,7 @@ body.ie .ibg img {
 }
 @media (max-width: 768px) {
 	.goods__title {
-		font-size: 50px;
+		font-size: 40px;
 		margin-bottom: 40px;
 	}
 }
@@ -2248,7 +2265,7 @@ body.ie .ibg img {
 .reviews {
 	position: relative;
 	background: url("../img/main__slider/16.JPG") center/cover no-repeat;
-	min-height: 550px;
+	min-height: 650px;
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2282,6 +2299,7 @@ body.ie .ibg img {
 		position: static;
 		width: 100%;
 		bottom: 0;
+		padding: 40px 20px 30px 20px;
 	}
 }
 .content-reviews__title {
@@ -2359,19 +2377,16 @@ body.ie .ibg img {
 @media (max-width: 768px) {
 	.certificate__title {
 		font-size: 40px;
+		margin-bottom: 25px;
 	}
 }
 .certificate__subtitle {
-	text-align: center;
 	margin: 0 auto;
 	max-width: 950px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #788692;
 	margin-bottom: 30px;
-}
-.gallery-certificate {
-	padding-top: 50px;
 }
 .gallery-certificate__item {
 	display: -webkit-box;
@@ -2381,14 +2396,16 @@ body.ie .ibg img {
 	margin-right: 10px;
 	padding: 10px 0px;
 }
-.gallery-certificate__item:hover .gallery-certificate__text {
-	visibility: visible;
-	opacity: 1;
-}
-.gallery-certificate__item:hover .gallery-certificate__link {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 52%;
-	        flex: 0 0 52%;
+@media (min-width: 768px) {
+	.gallery-certificate__item:hover .gallery-certificate__text {
+		visibility: visible;
+		opacity: 1;
+	}
+	.gallery-certificate__item:hover .gallery-certificate__link {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 52%;
+		        flex: 0 0 52%;
+	}
 }
 .gallery-certificate__item_c {
 	-webkit-box-orient: vertical;
@@ -2402,26 +2419,54 @@ body.ie .ibg img {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
+@media (max-width: 500px) {
+	.gallery-certificate__item {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
 .gallery-certificate__text {
-	visibility: hidden;
-	opacity: 0;
 	font-size: 15px;
 	line-height: 16px;
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 48%;
-	        flex: 0 0 48%;
 	-webkit-transition: 0.7s all;
 	-o-transition: 0.7s all;
 	transition: 0.7s all;
 	padding-left: 5px;
 	color: #1c2e3d;
 }
+@media (min-width: 768px) {
+	.gallery-certificate__text {
+		visibility: hidden;
+		opacity: 0;
+		font-size: 15px;
+		line-height: 16px;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 48%;
+		        flex: 0 0 48%;
+		-webkit-transition: 0.7s all;
+		-o-transition: 0.7s all;
+		transition: 0.7s all;
+	}
+}
+@media (max-width: 500px) {
+	.gallery-certificate__text {
+		max-width: 85%;
+	}
+}
 .gallery-certificate__link {
 	width: 200px;
 	height: 250px;
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 100%;
-	        flex: 0 0 100%;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2440,6 +2485,22 @@ body.ie .ibg img {
 	max-height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+}
+@media (min-width: 768px) {
+	.gallery-certificate__link {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+	}
+}
+@media (max-width: 500px) {
+	.gallery-certificate__link {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		margin-bottom: 40px;
+		height: auto;
+	}
 }
 
 .business {
@@ -2473,10 +2534,27 @@ body.ie .ibg img {
 	border-radius: 8px;
 	overflow: hidden;
 }
+@media (max-width: 992px) {
+	.business__body {
+		padding: 70px 35px 50px;
+		min-height: 1100px;
+	}
+}
+@media (max-width: 450px) {
+	.business__body {
+		padding: 70px 15px 50px;
+	}
+}
 .business__title {
 	font-size: 75px;
 	margin-bottom: 30px;
 	color: #fff;
+}
+@media (max-width: 768px) {
+	.business__title {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
 }
 .business__subtitle {
 	color: #fff;
@@ -2485,10 +2563,21 @@ body.ie .ibg img {
 	margin-bottom: 30px;
 	max-width: 70%;
 }
+@media (max-width: 768px) {
+	.business__subtitle {
+		max-width: none;
+	}
+}
 .business__cta {
 	color: #fff;
 	font-size: 16px;
 	line-height: 24px;
+	padding-right: 60%;
+}
+@media (max-width: 992px) {
+	.business__cta {
+		padding-right: 0;
+	}
 }
 .business__list {
 	margin-top: 50px;
@@ -2505,6 +2594,14 @@ body.ie .ibg img {
 	bottom: -96px;
 	right: 40px;
 	z-index: 2;
+}
+@media (max-width: 768px) {
+	.business__form {
+		right: 50%;
+		-webkit-transform: translateX(50%);
+		    -ms-transform: translateX(50%);
+		        transform: translateX(50%);
+	}
 }
 
 .subscribe-form {
@@ -2524,6 +2621,17 @@ body.ie .ibg img {
 	border-radius: 8px;
 	padding-top: 53px;
 }
+@media (max-width: 600px) {
+	.subscribe-form {
+		position: static;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
+		width: 100%;
+		margin-top: 30px;
+		height: auto;
+	}
+}
 .subscribe-form__field {
 	width: calc(100% - (72px * 2));
 	border: none;
@@ -2533,6 +2641,11 @@ body.ie .ibg img {
 	line-height: 13px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+@media (max-width: 600px) {
+	.subscribe-form__field {
+		width: calc(100% - 30px);
+	}
 }
 .subscribe-form__btn {
 	width: 100%;
@@ -2549,6 +2662,11 @@ body.ie .ibg img {
 	background-color: #92c8e9;
 	color: #fff;
 	margin-top: 76px;
+}
+@media (max-width: 600px) {
+	.subscribe-form__btn {
+		padding: 30px 50px;
+	}
 }
 
 .contacts__body {
