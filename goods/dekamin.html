@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Dekamin</title>
+</head>
+
+<body>
+	<div class="products dekamin">
+		<div class='container'>
+			<div class="products__body">
+				<div class="products__content">
+					<div class="products__header">
+						<div class="products__logo">
+							<img src="../img/products/products_logo/dekamin.png" alt="">
+						</div>
+						<div class="products__contains">
+							<h2 class="products__title title-contains">Состав продукта</h2>
+							<ul class="products__list">
+								<li>Витамин D</li>
+								<li>Витамин K2</li>
+								<li>Магний</li>
+								<li>Витамин С</li>
+							</ul>
+						</div>
+					</div>
+					<div class="products__descr">
+						Сочетание витаминов D и K2 в пластырях One More™️Dekamin восполнит дефицит солнечного света в Вашем
+						организме и запустит полное оздоровление уже за 1 неделю применения.
+					</div>
+					<div class="products__contains-descr">
+						<div class="products__item">
+							<img src="../img/products/dekamin/D.jpg" alt="">
+							<div>
+								<h3>Витамин D</h3>
+								Витамин D, также известный как «витамин солнечного света» - один из самых важных витаминов для
+								организма. Он регулирует фосфорно-кальциевый обмен, обеспечивает нормальную свертываемость крови, а
+								также рост и развитие костей у детей и укрепление плотности костей у взрослых. Применяется при
+								профилактике остеопороза, участвует в регуляции артериального давления и работы сердца, а также
+								блокирует бесконтрольное размножение клеток организма, что делает его эффективным в профилактике
+								онкологических заболеваний. Играет важную роль в регулировании настроения, предотвращении хронической
+								усталости, беспокойства и депрессии.
+							</div>
+						</div>
+						<div class="products__item">
+							<img src="../img/products/dekamin/K.jpg" alt="">
+							<div>
+								<h3>Витамин K2</h3>
+								Витамин K2 участвует в свертывании крови и регулирует функцию клеток, замедляя старение у взрослых и
+								поддерживая здоровый рост у детей. Он улучшает здоровье костей и зубов, снижает риск воспаления,
+								помогает предотвратить остеопороз, диабет, переломы, сердечно-сосудистые и аутоиммунные заболевания, а
+								также некоторые виды рака. Кроме того, витамин K2 играет очень важную роль для развития у зародыша
+								правильной формы лица, сильных костей, первичных зубов, следовательно, он рекомендован для приёма
+								будущим мамам.
+							</div>
+						</div>
+						<div class="products__item">
+							<img src="../img/products/dekamin/mg.jpg" alt="">
+							<div>
+								<h3>Магний</h3>
+								Магний является одним из самых необходимых макроэлементов для стабильного функционирования сердца. Также
+								он участвует в работе нервной системы, иммунитета, влияет на психическое здоровье и помогает выработке
+								более трехсот ферментов. Благодаря этому макроэлементу происходит выработка энергии, необходимой для
+								нормальной жизнедеятельности. Также магний приносит пользу многим системам организма: налаживает ритм
+								сердца, оптимизирует показатели давления, снижает уровень вредного холестерина, понижает риск
+								возникновения инсульта и диабета второго типа, участвует в метаболизме глюкозы, а также уменьшает
+								задержку жидкости в организме.
+							</div>
+						</div>
+						<div class="products__item">
+							<img src="../img/products/dekamin/c.jpg" alt="">
+							<div>
+								<h3>Витамин С</h3>
+								Витамин С укрепляет иммунную систему человека, а также предохраняет её от вирусов и бактерий, ускоряет
+								процесс заживления ран, оказывает влияние на синтез ряда гормонов, регулирует процессы кроветворения и
+								нормализует проницаемость капилляров, участвует в синтезе белка коллагена, что необходимо для роста
+								клеток тканей.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products__images products-images">
+					<div class="container__images ">
+						<img src="../img/products/01.jpg" id="expandedImg">
+					</div>
+					<div class="products-images__row">
+						<div class="products-images__column">
+							<img src="../img/products/01.jpg" alt="Nature" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+						<div class="products-images__column">
+							<img src="../img/products/02.jpg" alt="Snow" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+						<div class="products-images__column">
+							<img src="../img/products/03.jpg" alt="Mountains" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+						<div class="products-images__column">
+							<img src="../img/products/04.jpg" alt="Lights" style="width:100%; background-color: red;"
+								onclick="myFunction(this);">
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+
+		function myFunction(imgs) {
+			var expandImg = document.getElementById("expandedImg");
+			expandImg.src = imgs.src;
+			imgText.innerHTML = imgs.alt;
+			expandImg.parentElement.style.display = "block";
+		};
+
+		function ibg() {
+			if (isIE()) {
+				let ibg = document.querySelectorAll(".ibg");
+				for (var i = 0; i < ibg.length; i++) {
+					if (ibg[i].querySelector('img') && ibg[i].querySelector('img').getAttribute('src') != null) {
+						ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+					}
+				}
+			}
+		}
+		ibg();
+
+
+	</script>
+
+
+</body>
+
+</html>

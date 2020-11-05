@@ -51,6 +51,7 @@ if ($(".slider-certificates").length > 0) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          adaptiveHeight: true,
         },
       },
     ],
@@ -80,7 +81,9 @@ if ($(".content-reviews__slider").length > 0) {
     responsive: [
       {
         breakpoint: 768,
-        settings: {},
+        settings: {
+          adaptiveHeight: true,
+        },
       },
     ],
   });

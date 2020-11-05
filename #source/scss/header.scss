@@ -86,9 +86,11 @@ $color-omevia: #92c8e9;
 	svg {
 		transition: all 0.4s;
 	}
-	&:hover {
-		transform: scale(1.051);
-		color: $color-omevia;
+	@media (min-width: 992px) {
+		&:hover {
+			transform: scale(1.051);
+			color: $color-omevia;
+		}
 	}
 
 	@media (max-width: 1100px) {

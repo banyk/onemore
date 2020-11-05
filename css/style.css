@@ -1383,11 +1383,13 @@ body.ie .ibg img {
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
 }
-.header-body-menu__link:hover {
-	-webkit-transform: scale(1.051);
-	    -ms-transform: scale(1.051);
-	        transform: scale(1.051);
-	color: #92c8e9;
+@media (min-width: 992px) {
+	.header-body-menu__link:hover {
+		-webkit-transform: scale(1.051);
+		    -ms-transform: scale(1.051);
+		        transform: scale(1.051);
+		color: #92c8e9;
+	}
 }
 @media (max-width: 1100px) {
 	.header-body-menu__link {
@@ -1601,6 +1603,33 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.products__content {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
+}
+@media (max-width: 1250px) {
+	.products__content {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 55%;
+		        flex: 0 0 55%;
+	}
+}
+.products__images {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
+}
+@media (max-width: 1250px) {
+	.products__images {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
+	}
 }
 .products__header {
 	display: -webkit-box;
@@ -1619,6 +1648,11 @@ body.ie .ibg img {
 	text-transform: uppercase;
 	letter-spacing: 7.5px;
 }
+@media (max-width: 1250px) {
+	.products__title {
+		width: 100%;
+	}
+}
 .products__contains {
 	width: 100%;
 	margin-left: 50px;
@@ -1630,6 +1664,18 @@ body.ie .ibg img {
 }
 .products__contains-descr {
 	font-size: 16px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+@media (max-width: 1250px) {
+	.products__contains {
+		margin-left: 0px;
+	}
 }
 .products__list {
 	display: -webkit-box;
@@ -1657,15 +1703,25 @@ body.ie .ibg img {
 	background: url("../img/products/omevia/list-item__bg.svg") center no-repeat;
 }
 .products__logo {
-	width: 400px;
+	min-width: 220px;
 }
 .products__logo img {
 	height: 100%;
 	width: 100%;
 }
+@media (max-width: 1250px) {
+	.products__logo {
+		display: none;
+	}
+}
 .products__title {
-	margin: 50px 0px 50px;
+	margin: 50px 0px;
 	font-size: 45px;
+}
+@media (max-width: 992px) {
+	.products__title {
+		margin: 25px 0px;
+	}
 }
 .products__descr {
 	padding: 30px;
@@ -1676,12 +1732,6 @@ body.ie .ibg img {
 	line-height: 22px;
 	font-weight: 700;
 	font-style: italic;
-	border-radius: 7px;
-}
-.products__images {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 50%;
-	        flex: 0 0 50%;
 	border-radius: 7px;
 }
 .products__item {
@@ -1701,6 +1751,7 @@ body.ie .ibg img {
 	    -ms-flex: 0 0 75%;
 	        flex: 0 0 75%;
 	padding: 0px 20px;
+	line-height: 19px;
 }
 .products__item h3 {
 	margin-bottom: 15px;
@@ -1761,6 +1812,11 @@ body.ie .ibg img {
 	-o-object-fit: contain;
 	   object-fit: contain;
 }
+@media (max-width: 992px) {
+	.container__images {
+		height: 370px;
+	}
+}
 
 .sornie .products__title {
 	border-color: #b48d3f;
@@ -1773,9 +1829,6 @@ body.ie .ibg img {
 }
 .sornie .products__item h3 {
 	color: #b48d3f;
-}
-.sornie .products__item:nth-child(5) img {
-	max-width: 120px;
 }
 
 .painless .products__title {
@@ -1795,7 +1848,7 @@ body.ie .ibg img {
 	border-color: #ef3e36;
 }
 .b12 .products__list li::before {
-	background: url("../img/products/b12/list-item__bg.svg");
+	background-image: url("../img/products/b12/list-item__bg.svg");
 }
 .b12 .products__descr {
 	background-color: #ef3e36;
@@ -1828,6 +1881,19 @@ body.ie .ibg img {
 }
 .melatonin .products__item h3 {
 	color: #ee1d99;
+}
+
+.dekamin .products__title {
+	border-color: #febc01;
+}
+.dekamin .products__list li::before {
+	background-image: url("../img/products/dekamin/list-item__bg.svg");
+}
+.dekamin .products__descr {
+	background-color: #febc01;
+}
+.dekamin .products__item h3 {
+	color: #febc01;
 }
 
 .title {
@@ -1984,7 +2050,7 @@ body.ie .ibg img {
 }
 @media (max-width: 768px) {
 	.about {
-		padding: 20px 0;
+		padding: 40px 0;
 		margin-top: 30px;
 	}
 }
@@ -2154,7 +2220,7 @@ body.ie .ibg img {
 	    flex-wrap: wrap;
 	background-color: #fff;
 }
-@media (max-width: 1210px) {
+@media (max-width: 992px) {
 	.goods__row {
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
@@ -2518,7 +2584,7 @@ body.ie .ibg img {
 	background-color: #92c8e9;
 	padding: 110px 60px 80px;
 	border-radius: 8px;
-	background: url("../img/business/01.JPG") center/cover no-repeat;
+	background: url("../../img/business/01.JPG") center/cover no-repeat;
 	z-index: 1;
 }
 .business__body:after {
@@ -2630,6 +2696,7 @@ body.ie .ibg img {
 		width: 100%;
 		margin-top: 30px;
 		height: auto;
+		padding-top: 23px;
 	}
 }
 .subscribe-form__field {
@@ -2665,7 +2732,8 @@ body.ie .ibg img {
 }
 @media (max-width: 600px) {
 	.subscribe-form__btn {
-		padding: 30px 50px;
+		padding: 30px 20px;
+		margin-top: 46px;
 	}
 }
 
@@ -2674,15 +2742,41 @@ body.ie .ibg img {
 	display: -ms-flexbox;
 	display: flex;
 }
+@media (max-width: 992px) {
+	.contacts__body {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+}
 .contacts__map {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 50%;
 	        flex: 0 0 50%;
 }
+@media (max-width: 992px) {
+	.contacts__map {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
+	}
+}
 .contacts__info {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 50%;
 	        flex: 0 0 50%;
+}
+@media (max-width: 992px) {
+	.contacts__info {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+	}
 }
 
 .info-contacts {
@@ -2699,7 +2793,7 @@ body.ie .ibg img {
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
-	padding: 0px 45px;
+	padding: 50px 45px;
 	background: url("../img/about/onemore.jpg") center/cover no-repeat;
 	position: relative;
 }
@@ -2719,10 +2813,21 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 45px;
 	font-size: 25px;
 	color: #fff;
 }
 .info-contacts__item svg {
 	margin-right: 10px;
+}
+.info-contacts__item:not(:last-child) {
+	margin-bottom: 45px;
+}
+.map-contacts {
+	width: 100%;
+	height: 450px;
+}
+@media (max-width: 992px) {
+	.map-contacts {
+		height: 300px;
+	}
 }
