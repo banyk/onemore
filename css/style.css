@@ -2584,7 +2584,7 @@ body.ie .ibg img {
 	background-color: #92c8e9;
 	padding: 110px 60px 80px;
 	border-radius: 8px;
-	background: url("../../img/business/01.JPG") center/cover no-repeat;
+	background: url("../img/business/01.JPG") center/cover no-repeat;
 	z-index: 1;
 }
 .business__body:after {
