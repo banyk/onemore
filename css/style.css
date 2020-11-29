@@ -2565,7 +2565,7 @@ body.ie .ibg img {
 
 .reviews {
 	position: relative;
-	background: url("../img/main__slider/16.JPG") center/cover no-repeat;
+	background: url("../img/reviews/bg.JPG") center/cover no-repeat;
 	min-height: 650px;
 	width: 100%;
 	display: -webkit-box;
