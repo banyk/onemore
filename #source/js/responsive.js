@@ -1,46 +1,47 @@
 //Adaptive functions
 $(window).resize(function (event) {
-	adaptive_function();
+  adaptive_function();
 });
 function adaptive_header(w, h) {
-	var headerMenu = $('.header-menu');
-	var headerLang = $('.header-top-lang');
-	if (w < 767) {
-		if (!headerLang.hasClass('done')) {
-			headerLang.addClass('done').appendTo(headerMenu);
-		}
-	} else {
-		if (headerLang.hasClass('done')) {
-			headerLang.removeClass('done').prependTo($('.header-top'));
-		}
-	}
-	if (w < 992) {
-		if (!$('.header-body-menu').hasClass('done')) {
-			$('.header-body-menu').addClass('done').appendTo(headerMenu);
-		}
-	} else {
-		$.each($('.header-body-menu'), function (index, val) {
-			if ($(this).hasClass('header-body-menu--right')) {
-				if ($(this).hasClass('done')) {
-					$(this).removeClass('done').prependTo($('.header-body__column').eq(3));
-				}
-			} else {
-				if ($(this).hasClass('done')) {
-					$(this).removeClass('done').prependTo($('.header-body__column').eq(1));
-				}
-			}
-		});
-	}
+  var headerMenu = $(".header-menu");
+  var headerLang = $(".header-top-lang");
+  if (w < 767) {
+    if (!headerLang.hasClass("done")) {
+      headerLang.addClass("done").appendTo(headerMenu);
+    }
+  } else {
+    if (headerLang.hasClass("done")) {
+      headerLang.removeClass("done").prependTo($(".header-top"));
+    }
+  }
+  if (w < 992) {
+    if (!$(".header-body-menu").hasClass("done")) {
+      $(".header-body-menu").addClass("done").appendTo(headerMenu);
+    }
+  } else {
+    $.each($(".header-body-menu"), function (index, val) {
+      if ($(this).hasClass("header-body-menu--right")) {
+        if ($(this).hasClass("done")) {
+          $(this)
+            .removeClass("done")
+            .prependTo($(".header-body__column").eq(3));
+        }
+      } else {
+        if ($(this).hasClass("done")) {
+          $(this)
+            .removeClass("done")
+            .prependTo($(".header-body__column").eq(1));
+        }
+      }
+    });
+  }
 }
 function adaptive_function() {
-	var w = $(window).outerWidth();
-	var h = $(window).outerHeight();
-	adaptive_header(w, h);
+  var w = $(window).outerWidth();
+  var h = $(window).outerHeight();
+  adaptive_header(w, h);
 }
 adaptive_function();
-
-
-
 
 /* 	let move_array=[];
 if($('*[data-move]')){

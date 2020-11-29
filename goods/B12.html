@@ -11,17 +11,19 @@
 </head>
 
 <body>
-	<div class="products b12">
-		<div class='container'>
-			<div class="products__body">
-				<div class="products__content">
-					<div class="products__header">
-						<div class="products__logo">
+	<div class="wrapper">
+		<div class="products b12">
+			<div class='container'>
+				<h1 class="visually-hidden">Пластырь B12 Plus от OneMore</h1>
+
+				<div class="products__header header-products">
+					<div class="header-products__info">
+						<div class="header-products__logo">
 							<img src="../img/products/products_logo/b12.png" alt="">
 						</div>
-						<div class="products__contains">
-							<h2 class="products__title title-contains">Состав продукта</h2>
-							<ul class="products__list">
+						<div class="header-products__contains">
+							<h2 class="header-products__title title-contains">Состав продукта</h2>
+							<ul class="header-products__list">
 								<li>Витамин В12</li>
 								<li>Витамин B1</li>
 								<li>Витамин В3</li>
@@ -30,97 +32,117 @@
 								<li>Фолиевая кислота</li>
 							</ul>
 						</div>
+						<div class="header-products__descr">
+							One More™ B12 Plus уже за 1 неделю обеспечит ваш организм всеми необходимыми витаминами без таблеток и
+							инъекций. Пластыри B12 Plus обеспечивают проникновение богатого комплекса витаминов через кожу напрямую
+							в
+							организм, что является самым эффективным способом после инъекционного метода.
+						</div>
 					</div>
-					<div class="products__descr">
-						One More™ B12 Plus уже за 1 неделю обеспечит ваш организм всеми необходимыми витаминами без таблеток и
-						инъекций. Пластыри B12 Plus обеспечивают проникновение богатого комплекса витаминов через кожу напрямую в
-						организм, что является самым эффективным способом после инъекционного метода.
-					</div>
-					<div class="products__contains-descr">
-						<div class="products__item">
-							<img src="../img/products/b12/b12.jpg" alt="">
-							<div>
-								<h3>Витамин В12</h3>
-								Витамин В12 производит красные кровяные клетки и защищает центральную нервную систему. При недостатке
-								витамина В12 могут наблюдаться такие симптомы как: анемия, потеря равновесия, онемение в ногах и руках,
-								покалывание, слабость.
-							</div>
+					<div class="header-products__gallery products-images">
+						<div class="container__images ">
+							<img src="../img/products/03.jpg" id="expandedImg">
 						</div>
-						<div class="products__item">
-							<img src="../img/products/b12/b1.jpg" alt="">
-							<div>
-								<h3>Витамин B1</h3>
-								Витамин B1 необходим для здоровья мозга, сердца, мышц, а также кровеносной, пищеварительной и нервной
-								систем.
+						<div class="products-images__row">
+							<div class="products-images__column">
+								<img src="../img/products/03.jpg" alt="Nature" onclick="myFunction(this);">
 							</div>
-						</div>
-						<div class="products__item">
-							<img src="../img/products/b12/b3.jpg" alt="">
-							<div>
-								<h3>Витамин В3</h3>
-								Витамин В3 обеспечивает защиту тканей кожи, а также отвечает за переработку жиров, полученных с пищей.
-								Помогает организму производить энергию, тем самым избавляя от чувства усталости и истощения.
+							<div class="products-images__column">
+								<img src="../img/products/b12/gallery/01.jpg" alt="Mountains" onclick="myFunction(this);">
 							</div>
-						</div>
-						<div class="products__item">
-							<img src="../img/products/b12/e.jpg" alt="">
-							<div>
-								<h3>Витамин Е</h3>
-								Витамин Е укрепляет иммунную систему, а также усиливает кровообращение, благотворно влияет на здоровье
-								волос и кожи, тем самым замедляя старение организма.
+							<div class="products-images__column">
+								<img src="../img/products/b12/gallery/02.jpg" alt="Snow" onclick="myFunction(this);">
 							</div>
-						</div>
-						<div class="products__item">
-							<img src="../img/products/b12/c.jpg" alt="">
-							<div>
-								<h3>Витамин С</h3>
-								Витамин С укрепляет иммунную систему человека, а также предохраняет её от вирусов и бактерий, ускоряет
-								процесс заживления ран, оказывает влияние на синтез ряда гормонов, регулирует процессы кроветворения и
-								нормализует проницаемость капилляров, участвует в синтезе белка коллагена, что необходимо для роста
-								клеток тканей.
-							</div>
-						</div>
-						<div class="products__item">
-							<img src="../img/products/b12/folic.png" alt="">
-							<div>
-								<h3>Фолиевая кислота</h3>
-								Фолиевая кислота играет важную роль в синтезе ДНК и делении и образовании новых клеток и производстве
-								крови в организме. Врачи назначают препараты фолиевой кислоты всем будущим мамам на ранних сроках
-								беременности. Этот витамин отвечает и за умственное, и за физическое здоровье малыша. Также он
-								предотвращает прерывание беременности на ранних сроках и депрессивные состояния у женщины.
+							<div class="products-images__column">
+								<img src="../img/products/b12/gallery/03.jpg" alt="Mountains" onclick="myFunction(this);">
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="products__images products-images">
-					<div class="container__images ">
-						<img src="../img/products/01.jpg" id="expandedImg">
+				<div class="products__body">
+					<div class="products__info info-contains">
+						<div class="info-contains__item">
+							<img src="../img/products/b12/b12.jpg" alt="">
+							<div>
+								<h3>Витамин В12</h3>
+								<p>
+									Витамин В12 производит красные кровяные клетки и защищает центральную нервную систему. При недостатке
+									витамина В12 могут наблюдаться такие симптомы как: анемия, потеря равновесия, онемение в ногах и
+									руках,
+									покалывание, слабость.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../img/products/b12/b1.jpg" alt="">
+							<div>
+								<h3>Витамин B1</h3>
+								<p>
+									Витамин B1 необходим для здоровья мозга, сердца, мышц, а также кровеносной, пищеварительной и нервной
+									систем.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../img/products/b12/b3.jpg" alt="">
+							<div>
+								<h3>Витамин В3</h3>
+								<p>
+									Витамин В3 обеспечивает защиту тканей кожи, а также отвечает за переработку жиров, полученных с пищей.
+									Помогает организму производить энергию, тем самым избавляя от чувства усталости и истощения.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../img/products/b12/e.jpg" alt="">
+							<div>
+								<h3>Витамин Е</h3>
+								<p>
+									Витамин Е укрепляет иммунную систему, а также усиливает кровообращение, благотворно влияет на здоровье
+									волос и кожи, тем самым замедляя старение организма.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../img/products/b12/c.jpg" alt="">
+							<div>
+								<h3>Витамин С</h3>
+								<p>
+									Витамин С укрепляет иммунную систему человека, а также предохраняет её от вирусов и бактерий, ускоряет
+									процесс заживления ран, оказывает влияние на синтез ряда гормонов, регулирует процессы кроветворения и
+									нормализует проницаемость капилляров, участвует в синтезе белка коллагена, что необходимо для роста
+									клеток тканей.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../img/products/b12/folic.png" alt="">
+							<div>
+								<h3>Фолиевая кислота</h3>
+								<p>
+									Фолиевая кислота играет важную роль в синтезе ДНК и делении и образовании новых клеток и производстве
+									крови в организме. Врачи назначают препараты фолиевой кислоты всем будущим мамам на ранних сроках
+									беременности. Этот витамин отвечает и за умственное, и за физическое здоровье малыша. Также он
+									предотвращает прерывание беременности на ранних сроках и депрессивные состояния у женщины.
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="products-images__row">
-						<div class="products-images__column">
-							<img src="../img/products/01.jpg" alt="Nature" style="width:100%; background-color: red;"
-								onclick="myFunction(this);">
-						</div>
-						<div class="products-images__column">
-							<img src="../img/products/02.jpg" alt="Snow" style="width:100%; background-color: red;"
-								onclick="myFunction(this);">
-						</div>
-						<div class="products-images__column">
-							<img src="../img/products/03.jpg" alt="Mountains" style="width:100%; background-color: red;"
-								onclick="myFunction(this);">
-						</div>
-						<div class="products-images__column">
-							<img src="../img/products/04.jpg" alt="Lights" style="width:100%; background-color: red;"
-								onclick="myFunction(this);">
-						</div>
-					</div>
+					<div class="products__cta">
+<p class="form-cta">Оставьте свои контакты - мы перезвоним и с удовольствием расскажем вам
+	подробности.
+</p>
 
-
+<form action="" class="subscribe-form">
+	<input type="text" name="name" placeholder="Имя" class="subscribe-form__field">
+	<input type="email" name="email" placeholder="Email" class="subscribe-form__field">
+	<input type="tel" name="tel" placeholder="Номер телефона" class="subscribe-form__field">
+	<button class="subscribe-form__btn">оставить заявку</button>
+</form>					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<script>
 

@@ -54,6 +54,17 @@ body {
 		padding: 0 20px;
 	}
 }
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
@@ -423,7 +434,10 @@ body {
 	}
 
 	@media (max-width: 992px) {
-		min-height: 600px;
+		min-height: 550px;
+	}
+	@media (max-width: 768px) {
+		min-height: 100vh;
 	}
 }
 
@@ -456,6 +470,13 @@ body {
 	}
 
 	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 80%;
+		@media (max-width: 768px) {
+			height: 100%;
+		}
 	}
 
 	&__slider {
@@ -612,7 +633,7 @@ body {
 		background-color: $color-omevia;
 		padding: 110px 60px 80px;
 		border-radius: 8px;
-		background: url("../../img/business/01.JPG") center / cover no-repeat;
+		background: url("../img/business/01.JPG") center / cover no-repeat;
 		z-index: 1;
 		&:after {
 			content: "";
@@ -785,7 +806,6 @@ body {
 		left: 0;
 		height: 100%;
 		width: 100%;
-		// background-color: $color-omevia;
 		background-color: rgba(17, 31, 42, 0.9);
 		opacity: 0.7;
 	}
@@ -802,6 +822,9 @@ body {
 		&:not(:last-child) {
 			margin-bottom: 45px;
 		}
+	}
+	@media (max-width: 768px) {
+		padding: 30px 25px;
 	}
 
 	&__address {

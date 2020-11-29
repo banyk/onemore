@@ -65,7 +65,7 @@ if ($(".content-reviews__slider").length > 0) {
     // infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     dots: true,
     arrows: false,
     vertical: false,
