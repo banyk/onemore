@@ -2,7 +2,7 @@ $color-sornie: #b48d3f;
 $color-omevia: #92c8e9;
 //====================================================================================================
 .header {
-	position: fixed;
+	position: absolute;
 	z-index: 10;
 	top: 0;
 	left: 0;
@@ -13,6 +13,7 @@ $color-omevia: #92c8e9;
 }
 
 .header.fixed {
+	position: fixed;
 	background-color: rgba(28, 46, 61, 0.8);
 }
 
@@ -89,7 +90,6 @@ $color-omevia: #92c8e9;
 	@media (min-width: 992px) {
 		&:hover {
 			transform: scale(1.051);
-			color: $color-omevia;
 		}
 	}
 

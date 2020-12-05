@@ -65,9 +65,9 @@ if ($(".content-reviews__slider").length > 0) {
     // infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
-    dots: true,
-    arrows: false,
+    adaptiveHeight: false,
+    dots: false,
+    arrows: true,
     vertical: false,
     accessibility: false,
     autoplay: false,
@@ -87,7 +87,47 @@ if ($(".content-reviews__slider").length > 0) {
       },
     ],
   });
+
+  var $status = $(".slider__counter");
+  var $slickElement = $(".content-reviews__slider");
+
+  $slickElement.on(
+    "init reInit afterChange",
+    function (event, slick, currentSlide, nextSlide) {
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $status.text(i + "/" + slick.slideCount);
+    }
+  );
 }
+
+let videos = document.querySelectorAll(".content-reviews__slider video");
+let playButtons = document.querySelectorAll(".play-button");
+$(".content-reviews__slider").on(
+  "afterChange",
+  function (event, slick, currentSlide) {
+    videos.forEach((el) => {
+      el.pause();
+    });
+  }
+);
+
+/* playButtons.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let video = e.currentTarget
+      .closest(".item-reviews__body")
+      .querySelector("video");
+    video.play();
+    // if (video.play() === true) {
+    //   video.pause();
+    // } else {
+    //   video.play();
+    // }
+
+    setTimeout(() => {
+      video.volume = 0.8;
+    }, 1000);
+  });
+}); */
 
 /*
 
