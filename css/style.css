@@ -1157,7 +1157,7 @@ body.ie .ibg img {
 	font-size: 0;
 	width: 25px;
 	height: 40px;
-	background: url("../img/icons/slider__arrow.svg") center/cover no-repeat;
+	background: url("../img/icons/slider__arrow-white.svg") center/cover no-repeat;
 }
 @media (max-width: 500px) {
 	.content-reviews__slider .slick-arrow {
