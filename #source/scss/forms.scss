@@ -167,11 +167,12 @@ textarea {
 	&.focus {
 	}
 	&.err {
+		color: red;
+		border-bottom: 1.5px solid red;
 	}
 }
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
 }
 //</INPUT>====================================================================================================
 

@@ -1,11 +1,3 @@
-$color-omevia: #92c8e9;
-$color-sornie: #b48d3f;
-$color-painless: #0b9444;
-$color-b12: #ef3e36;
-$color-slim: #d91b5c;
-$color-melatonin: #ee1d99;
-$color-dekamin: #febc01;
-
 .products {
 	min-height: 100vh;
 	&__body {
@@ -297,6 +289,10 @@ $color-dekamin: #febc01;
 	}
 }
 
+.sornie .popup-content {
+	background-color: $color-sornie;
+}
+
 .painless .header-products {
 	&__title {
 		border-color: $color-painless;
@@ -324,6 +320,10 @@ $color-dekamin: #febc01;
 	&__btn {
 		background-color: $color-painless;
 	}
+}
+
+.painless .popup-content {
+	background-color: $color-painless;
 }
 
 .b12 .header-products {
@@ -355,6 +355,10 @@ $color-dekamin: #febc01;
 	}
 }
 
+.b12 .popup-content {
+	background-color: $color-b12;
+}
+
 .slim .header-products {
 	&__title {
 		border-color: $color-slim;
@@ -382,6 +386,10 @@ $color-dekamin: #febc01;
 	&__btn {
 		background-color: $color-slim;
 	}
+}
+
+.slim .popup-content {
+	background-color: $color-slim;
 }
 
 .melatonin .header-products {
@@ -413,6 +421,10 @@ $color-dekamin: #febc01;
 	}
 }
 
+.melatonin .popup-content {
+	background-color: $color-melatonin;
+}
+
 .dekamin .header-products {
 	&__title {
 		border-color: $color-dekamin;
@@ -440,4 +452,8 @@ $color-dekamin: #febc01;
 	&__btn {
 		background-color: $color-dekamin;
 	}
+}
+
+.dekamin .popup-content {
+	background-color: $color-dekamin;
 }

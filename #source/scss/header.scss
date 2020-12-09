@@ -1,5 +1,3 @@
-$color-sornie: #b48d3f;
-$color-omevia: #92c8e9;
 //====================================================================================================
 .header {
 	position: absolute;
@@ -38,7 +36,7 @@ $color-omevia: #92c8e9;
 			justify-content: space-between;
 		}
 		&:nth-child(3) {
-			flex: 0 0 30%;
+			flex: 0 0 15%;
 		}
 		&:nth-child(5) {
 			flex: 0 0 5%;
@@ -210,10 +208,6 @@ $color-omevia: #92c8e9;
 	}
 }
 
-.header {
-	&__lang {
-	}
-}
 .lang-header {
 	position: relative;
 	z-index: 15;
@@ -268,11 +262,16 @@ $color-omevia: #92c8e9;
 
 	&__item {
 		margin: 0 0 10px 0;
-		font-size: 15px;
-		color: #fff;
-		text-transform: uppercase;
 		&:last-child {
 			margin: 0;
+		}
+		a {
+			display: inline-block;
+			img {
+				width: 30px;
+				height: 20px;
+				object-fit: cover;
+			}
 		}
 	}
 }

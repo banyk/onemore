@@ -74,7 +74,7 @@
 						<div class="info-contains__item">
 							<img src="../img/products/melatonin/lavender.png" alt="">
 							<div>
-								<h3>Эфирное масло</h3>
+								<h3>Эфирное масло лаванды</h3>
 								<p>
 									Эфирное масло лаванды оказывает релаксирующее действие, устраняет нервное напряжение, а также улучшает
 									кровообращение.
@@ -110,28 +110,15 @@
 			</div>
 		</div>
 	</div>
-	<script>
 
+	<!-- @import "js.kit" -->
+
+	<script>
 		function myFunction(imgs) {
 			var expandImg = document.getElementById("expandedImg");
 			expandImg.src = imgs.src;
-			imgText.innerHTML = imgs.alt;
 			expandImg.parentElement.style.display = "block";
 		};
-
-		function ibg() {
-			if (isIE()) {
-				let ibg = document.querySelectorAll(".ibg");
-				for (var i = 0; i < ibg.length; i++) {
-					if (ibg[i].querySelector('img') && ibg[i].querySelector('img').getAttribute('src') != null) {
-						ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-					}
-				}
-			}
-		}
-		ibg();
-
-
 	</script>
 
 

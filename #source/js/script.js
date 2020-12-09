@@ -1,63 +1,6 @@
-var arrLang = {
-  en: {
-    about: "About Us",
-    goods: "Our products",
-    reviews: "Reviews",
-    certificates: "Certificates",
-    business: "Business",
-    contacts: "Contact US",
-    title1:
-      "Feel positive changes in your body in 12 hours of using One More ™",
-    subtitle1: `We took advantage of the healing properties of natural extracts and, using the latest scientific technologies, created
-		high-quality products that can cure chronic diseases and completely heal your
-		the body without stress on the liver. Our healing patches are based on innovative technology
-		‘Transdermal Wave Technology’, which allows active substances
-		penetrate through the skin directly into the blood, protecting the liver from harmful effects.`,
-  },
-  ru: {
-    about: "О компании",
-    goods: "Продукция",
-    reviews: "Отзывы",
-    certificates: "Сертификаты",
-    business: "Бизнес",
-    contacts: "Контакты",
-    title1:
-      "Инновационный подход к оздоровлению вашего организма с помощью лечебных пластырей One More™",
-    subtitle1: `Мы воспользовались целебными свойствами природных экстрактов и с помощью новейших научных технологий создали
-		высококачественную продукцию, которая способна вылечить хронические болезни и полностью оздоровить ваш
-		организм без нагрузки на печень. Наши лечебные пластыри разработаны на основе инновационной технологии
-		‘Transdermal Wave Technology’ (трансдермальная волновая технология), что позволяет активным веществам
-		проникать через кожу напрямую в кровь, защищая печень от вредоносного воздействия.`,
-  },
-  kz: {
-    about: "казахский",
-    goods: "казахский",
-    reviews: "казахский",
-    certificates: "казахский",
-    business: "казахский",
-    contacts: "казахский",
-    title1: "На казахском",
-    subtitle1: `Мы воспользовались целебными свойствами природных экстрактов и с помощью новейших научных технологий создали
-		высококачественную продукцию, которая способна вылечить хронические болезни и полностью оздоровить ваш
-		организм без нагрузки на печень. Наши лечебные пластыри разработаны на основе инновационной технологии
-		‘Transdermal Wave Technology’ (трансдермальная волновая технология), что позволяет активным веществам
-		проникать через кожу напрямую в кровь, защищая печень от вредоносного воздействия.`,
-  },
-};
-
-$(function () {
-  $(".translate").click(function () {
-    var lang = $(this).attr("id");
-
-    $(".lang").each(function (index, item) {
-      $(this).text(arrLang[lang][$(this).attr("key")]);
-    });
-  });
-});
-
 let userIcon = document.querySelector(".lang-header__icon"),
   userMenu = document.querySelector(".lang-header__menu");
-userIcon.addEventListener("click", function (e) {
+userIcon.addEventListener("click", function () {
   userMenu.classList.toggle("_active"), userIcon.classList.toggle("_active");
 }),
   document.documentElement.addEventListener("click", function (e) {

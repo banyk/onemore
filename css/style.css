@@ -113,7 +113,7 @@ body.lock {
 .container {
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 40px;
 }
 @media (max-width: 500px) {
 	.container {
@@ -292,9 +292,13 @@ textarea {
 	display: block;
 	padding: 0px 20px;
 }
+.input.err {
+	color: red;
+	border-bottom: 1.5px solid red;
+}
+
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
 }
 
 .check {
@@ -1186,7 +1190,7 @@ body.ie .ibg img {
 	-webkit-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
-	z-index: 100;
+	z-index: 5;
 	font-size: 2rem;
 	font-weight: 600;
 	color: #fff;
@@ -1265,6 +1269,13 @@ body.ie .ibg img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+.popup__title {
+	font-size: 35px;
+	margin: 0px 0px 50px 0px;
+}
+.popup__txt {
+	font-size: 20px;
+}
 
 .popup-table {
 	height: 100%;
@@ -1284,19 +1295,35 @@ body.ie .ibg img {
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	position: relative;
-	max-width: 1230px;
+	max-width: 500px;
 	margin: 0px auto;
-	background-color: #fff;
+	padding: 50px 25px;
+	border-radius: 8px;
+	background-color: #92c8e9;
+	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .popup-close {
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 10px;
+	right: 10px;
 	cursor: pointer;
-	background: url("../img/icons/close.png") 0 0 no-repeat;
+	background: url("../img/icons/close.svg") 0 0 no-repeat;
 }
 
 .popup-video .popup-close {
@@ -1374,8 +1401,8 @@ body.ie .ibg img {
 }
 .header-body__column:nth-child(3) {
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 30%;
-	        flex: 0 0 30%;
+	    -ms-flex: 0 0 15%;
+	        flex: 0 0 15%;
 }
 .header-body__column:nth-child(5) {
 	-webkit-box-flex: 0;
@@ -1651,12 +1678,18 @@ body.ie .ibg img {
 }
 .lang-header__item {
 	margin: 0 0 10px 0;
-	font-size: 15px;
-	color: #fff;
-	text-transform: uppercase;
 }
 .lang-header__item:last-child {
 	margin: 0;
+}
+.lang-header__item a {
+	display: inline-block;
+}
+.lang-header__item a img {
+	width: 30px;
+	height: 20px;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .products {
@@ -2080,6 +2113,10 @@ body.ie .ibg img {
 	background-color: #b48d3f;
 }
 
+.sornie .popup-content {
+	background-color: #b48d3f;
+}
+
 .painless .header-products__title {
 	border-color: #0b9444;
 }
@@ -2098,6 +2135,10 @@ body.ie .ibg img {
 	border: 1px solid #0b9444;
 }
 .painless .subscribe-form__btn {
+	background-color: #0b9444;
+}
+
+.painless .popup-content {
 	background-color: #0b9444;
 }
 
@@ -2122,6 +2163,10 @@ body.ie .ibg img {
 	background-color: #ef3e36;
 }
 
+.b12 .popup-content {
+	background-color: #ef3e36;
+}
+
 .slim .header-products__title {
 	border-color: #d91b5c;
 }
@@ -2140,6 +2185,10 @@ body.ie .ibg img {
 	border: 1px solid #d91b5c;
 }
 .slim .subscribe-form__btn {
+	background-color: #d91b5c;
+}
+
+.slim .popup-content {
 	background-color: #d91b5c;
 }
 
@@ -2164,6 +2213,10 @@ body.ie .ibg img {
 	background-color: #ee1d99;
 }
 
+.melatonin .popup-content {
+	background-color: #ee1d99;
+}
+
 .dekamin .header-products__title {
 	border-color: #febc01;
 }
@@ -2182,6 +2235,10 @@ body.ie .ibg img {
 	border: 1px solid #febc01;
 }
 .dekamin .subscribe-form__btn {
+	background-color: #febc01;
+}
+
+.dekamin .popup-content {
 	background-color: #febc01;
 }
 
@@ -3010,7 +3067,7 @@ body.ie .ibg img {
 	color: #fff;
 	font-size: 16px;
 	line-height: 24px;
-	padding-right: 60%;
+	padding-right: 61%;
 }
 @media (max-width: 992px) {
 	.business__cta {
@@ -3074,6 +3131,7 @@ body.ie .ibg img {
 .subscribe-form__field {
 	width: calc(100% - (72px * 2));
 	border: none;
+	color: rgba(28, 46, 61, 0.8);
 	border-bottom: 1px solid rgba(28, 46, 61, 0.3);
 	padding: 25px 0;
 	font-size: 11px;
@@ -3100,13 +3158,19 @@ body.ie .ibg img {
 	position: relative;
 	background-color: #92c8e9;
 	color: #fff;
-	margin-top: 76px;
+	margin-top: 39px;
 }
 @media (max-width: 600px) {
 	.subscribe-form__btn {
 		padding: 30px 20px;
 		margin-top: 46px;
 	}
+}
+
+.textarea__field {
+	min-height: 100px;
+	text-transform: none;
+	line-height: 16px;
 }
 
 .contacts__body {

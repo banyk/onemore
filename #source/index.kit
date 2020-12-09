@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>OneMore International</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
 						наши дистрибьюторы получают еженедельный доход от $2000,<br> рекомендуя нашу продукцию,
 						разработанную по новейшим технологиям.
 					</p>
-					<a class="main__btn btn" href=""><span>Получить консультацию</span></a>
+					<a href="#business" class="main__btn btn goto"><span>Получить консультацию</span></a>
 				</div>
 			</div>
 			<div class="main__body ibg slider__item">
@@ -52,7 +52,7 @@
 						<br>Таким образом, мы гарантируем высокую эффективность и безопасность пластырей
 						SlimStyle.
 					</p>
-					<a class="main__btn btn" href=""><span>посмотреть отзывы</span> </a>
+					<a href="#reviews" class="main__btn btn goto"><span>посмотреть отзывы</span> </a>
 				</div>
 			</div>
 			<div class="main__body ibg slider__item">
@@ -73,13 +73,12 @@
 						‘Transdermal Wave Technology’ (трансдермальная волновая технология), что позволяет активным веществам
 						проникать через кожу напрямую в кровь, защищая печень от вредоносного воздействия.
 					</p>
-					<a class="main__btn btn" href=""><span>узнать подробнее</span></a>
+					<a href="#goods" class="main__btn btn goto"><span>узнать подробнее</span></a>
 				</div>
 			</div>
 		</section>
 
 		<section class="about" id="about">
-			<!-- <div class='container'> -->
 			<div class="about__body">
 				<div class="about__image _anim-items _anim-no-hide">
 					<img src="img/about/onemore.jpg" alt="">
@@ -102,12 +101,9 @@
 								Нидерланды</li>
 						</ul>
 					</div>
-					<button type="submit" class="form__btn btn">Стать дистрибьютором</button>
+					<a href="#business" class="form__btn btn goto">Стать дистрибьютором</a>
 				</div>
-
-
 			</div>
-			<!-- </div> -->
 		</section>
 
 		<section class="goods" id="goods">
@@ -639,11 +635,14 @@
 						подробности.
 					</p>
 
-					<form action="" class="business__form subscribe-form">
-						<input type="text" name="name" placeholder="Имя" class="subscribe-form__field">
-						<input type="email" name="email" placeholder="Email" class="subscribe-form__field">
-						<input type="tel" name="tel" placeholder="Номер телефона" class="subscribe-form__field">
-						<button class="subscribe-form__btn">оставить заявку</button>
+					<form action="#" class="business__form subscribe-form" data-ms="ms_1">
+						<input type="text" name="formName" id="formName" class="subscribe-form__field req input" data-value="Имя*"
+							autocomplete="off">
+						<input type="tel" name="formTel" id="formTel" class="subscribe-form__field input req"
+							data-value="Номер телефона*" autocomplete="off">
+						<textarea class="subscribe-form__field input textarea__field " name="formMessage" id="formMessage"
+							data-value="ВАШЕ СООБЩЕНИЕ"></textarea>
+						<button type="submit" class="subscribe-form__btn">оставить заявку</button>
 					</form>
 				</div>
 			</div>

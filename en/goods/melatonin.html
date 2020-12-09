@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<title>Melatonin Plus</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="products melatonin">
+			<div class='container'>
+				<h1 class="visually-hidden">OneMore company Melatonin healing patch</h1>
+
+				<div class="products__header header-products">
+					<div class="header-products__info">
+						<div class="header-products__logo">
+							<img src="../../img/products/products_logo/melatonin.png" alt="melotonin logo">
+						</div>
+						<div class="header-products__contains">
+							<h2 class="header-products__title title-contains">Product Content</h2>
+							<ul class="header-products__list">
+								<li>Melatonin</li>
+								<li>Lavender Essential Oil</li>
+								<li>Rose Essential Oil</li>
+							</ul>
+						</div>
+						<div class="header-products__descr">
+							The One More ™ Melatonin Plus patch will provide you with a healthy sleep from the first night of use, as
+							well as support your immunity during the change of season, climate and travel. The active substance
+							melatonin from the patch penetrates through the skin directly into the blood, which ensures high
+							absorption without any harm to the liver.
+						</div>
+					</div>
+					<div class="header-products__gallery products-images">
+						<div class="container__images ">
+							<img src="../../img/products/06.jpg" id="expandedImg" alt="Melatonin patch">
+						</div>
+						<div class="products-images__row">
+							<div class="products-images__column">
+								<img src="../../img/products/06.jpg" alt="Melatonin patch" onclick="myFunction(this);">
+							</div>
+							<div class="products-images__column">
+								<img src="../../img/products/melatonin/gallery/01.JPG" alt="Melatonin patch"
+									onclick="myFunction(this);">
+							</div>
+							<div class="products-images__column">
+								<img src="../../img/products/melatonin/gallery/02.JPG" alt="Melatonin patch"
+									onclick="myFunction(this);">
+							</div>
+							<div class="products-images__column">
+								<img src="../../img/products/melatonin/gallery/03.JPG" alt="Melatonin patch"
+									onclick="myFunction(this);">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products__body">
+					<div class="products__info info-contains">
+						<div class="info-contains__item">
+							<img src="../../img/products/melatonin/melatonin.png" alt="melatonin">
+							<div>
+								<h3>Melatonin</h3>
+								<p>
+									Melatonin hormone, which is vital for human health, is a hormone secreted from the pineal gland in the
+									brain and is also known as sleep hormone. Its main task is to adjust the body's biological rhythm by
+									providing sleep patterns. It also has a very strong antioxidant effect. By eliminating the negative
+									effects of stress on the immune system, it enables us to stay vigorous and healthy.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../../img/products/melatonin/lavender.png" alt="lavender oil">
+							<div>
+								<h3>Lavender essential oil</h3>
+								<p>
+									Lavender essential oil has a relaxing effect, relieves nervous tension, and also improves blood
+									circulation.
+								</p>
+							</div>
+						</div>
+						<div class="info-contains__item">
+							<img src="../../img/products/melatonin/rosee.jpg" alt="rose oil">
+							<div>
+								<h3>Rose essential oil</h3>
+								<p>
+									Rose essential oil has a harmonizing and stabilizing effect on the emotional state, has a beneficial
+									effect on the endocrine system, has a bactericidal, antiviral, antifungal effect, helps to normalize
+									the functioning of the sebaceous glands, effectively fights dry skin, and also relieves cramps and
+									migraines
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="products__cta">
+<p class="form-cta">Leave your contact information here and we will call you back to tell you
+	the details.
+</p>
+
+
+
+<form action="#" class="subscribe-form" data-ms="ms_1">
+	<input type="text" name="formName" id="formName" class="subscribe-form__field req input" data-value="name*"
+		autocomplete="off">
+	<input type="tel" name="formTel" id="formTel" class="subscribe-form__field input req" data-value="phone number*"
+		autocomplete="off">
+	<textarea class="subscribe-form__field input textarea__field " name="formMessage" id="formMessage"
+		data-value="LEAVE YOUR MESSAGE"></textarea>
+	<button type="submit" class="subscribe-form__btn">submit</button>
+</form>
+<div class="popup popup-message ms_1">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title">Thank you!</div>
+				<div class="popup__txt">We got your message and we'll call you later!</div>
+			</div>
+		</div>
+	</div>
+</div>					</div>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../../js/products.js"></script>
+	<script>
+		function myFunction(imgs) {
+			var expandImg = document.getElementById("expandedImg");
+			expandImg.src = imgs.src;
+			expandImg.parentElement.style.display = "block";
+		};
+	</script>
+
+
+</body>
+
+</html>
