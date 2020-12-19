@@ -109,6 +109,7 @@ body.lock {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	position: relative;
 }
 .container {
 	margin: 0 auto;
@@ -164,19 +165,16 @@ body.lock {
 	font-weight: 700;
 	letter-spacing: 1.7px;
 }
+@media (min-width: 992px) {
+	.btn:hover {
+		background-color: #d8392d;
+	}
+}
 @media (max-width: 500px) {
 	.btn {
 		font-size: 13px;
 		padding: 15px 20px;
 	}
-}
-.btn::after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	left: 50%;
-	top: 0;
 }
 .btn span {
 	position: relative;
@@ -184,10 +182,6 @@ body.lock {
 	text-align: center;
 	width: 100%;
 	display: inline-block;
-}
-.btn:hover:after {
-	left: 0;
-	width: 100%;
 }
 
 .btn-reset {
@@ -1056,6 +1050,46 @@ body.ie .ibg img {
 		        transform: scale(1);
 	}
 }
+.wp {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 50;
+	-webkit-transform: translateX(150%);
+	    -ms-transform: translateX(150%);
+	        transform: translateX(150%);
+	-webkit-transition: -webkit-transform 0.5s ease 1s;
+	transition: -webkit-transform 0.5s ease 1s;
+	-o-transition: transform 0.5s ease 1s;
+	transition: transform 0.5s ease 1s;
+	transition: transform 0.5s ease 1s, -webkit-transform 0.5s ease 1s;
+	background-color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.wp__link {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: url("../img/whatsapp/whatsapp.svg") #fff center/contain no-repeat;
+}
+.wp._active {
+	-webkit-transform: translateX(0%);
+	    -ms-transform: translateX(0%);
+	        transform: translateX(0%);
+}
+
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */
@@ -1336,7 +1370,7 @@ body.ie .ibg img {
 
 .header {
 	position: absolute;
-	z-index: 10;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -2566,6 +2600,11 @@ body.ie .ibg img {
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
+@media (max-width: 768px) {
+	.goods__video {
+		margin: 0px 0px 50px 0px;
+	}
+}
 .goods__row {
 	width: 100%;
 	display: -webkit-box;
@@ -2665,6 +2704,7 @@ body.ie .ibg img {
 	color: #1c2e3d;
 }
 .item-goods__btn {
+	position: relative;
 	background-color: #92c8e9;
 	min-width: 100%;
 	border-top-left-radius: 0;
@@ -2678,6 +2718,11 @@ body.ie .ibg img {
 	.item-goods__btn {
 		min-width: 290px;
 		max-width: 290px;
+	}
+}
+@media (min-width: 992px) {
+	.item-goods__btn:hover {
+		background-color: #3296d1;
 	}
 }
 @media (max-width: 400px) {
@@ -2801,19 +2846,26 @@ body.ie .ibg img {
 		line-height: 20px;
 	}
 }
-.item-reviews__body video {
+.item-reviews__body--video {
 	display: block;
-	width: 100%;
 	max-height: 300px;
-	-o-object-fit: cover;
-	   object-fit: cover;
 	overflow: hidden;
 	border: 3px solid #fff;
 }
 @media (max-width: 768px) {
-	.item-reviews__body video {
+	.item-reviews__body--video-1 {
 		max-height: 400px;
 	}
+}
+@media (max-width: 500px) {
+	.item-reviews__body--video-1 {
+		max-height: 300px;
+	}
+}
+.item-reviews__body video {
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .item-reviews__body img {
 	display: block;
@@ -2843,14 +2895,6 @@ body.ie .ibg img {
 		margin: 50px 0px 30px 0px;
 		font-size: 20px;
 	}
-}
-.item-reviews__play-button {
-	position: absolute;
-	opacity: 0;
-	background-image: url("../../img/video-play.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .certificate {
@@ -3032,7 +3076,6 @@ body.ie .ibg img {
 @media (max-width: 992px) {
 	.business__body {
 		padding: 70px 35px 50px;
-		min-height: 1100px;
 	}
 }
 @media (max-width: 450px) {
@@ -3061,17 +3104,6 @@ body.ie .ibg img {
 @media (max-width: 768px) {
 	.business__subtitle {
 		max-width: none;
-	}
-}
-.business__cta {
-	color: #fff;
-	font-size: 16px;
-	line-height: 24px;
-	padding-right: 61%;
-}
-@media (max-width: 992px) {
-	.business__cta {
-		padding-right: 0;
 	}
 }
 .business__list {
@@ -3164,6 +3196,11 @@ body.ie .ibg img {
 	.subscribe-form__btn {
 		padding: 30px 20px;
 		margin-top: 46px;
+	}
+}
+@media (min-width: 992px) {
+	.subscribe-form__btn:hover {
+		background-color: #3296d1;
 	}
 }
 

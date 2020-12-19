@@ -40,6 +40,7 @@ body {
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	position: relative;
 	&.loaded {
 	}
 }
@@ -80,6 +81,7 @@ body {
 //@import "pagging.scss";
 //@import "icons.scss";
 @import "baguetteBox.scss";
+@import "wp.scss";
 @import "slider.scss";
 @import "popup.scss";
 @import "header.scss";
@@ -344,6 +346,10 @@ body {
 			max-height: 100%;
 			object-fit: cover;
 		}
+
+		@media (max-width: 768px) {
+			margin: 0px 0px 50px 0px;
+		}
 	}
 
 	&__row {
@@ -410,6 +416,7 @@ body {
 	}
 
 	&__btn {
+		position: relative;
 		background-color: $color-omevia;
 		min-width: 100%;
 		border-top-left-radius: 0;
@@ -419,6 +426,11 @@ body {
 		@media (max-width: 400px) {
 			min-width: 290px;
 			max-width: 290px;
+		}
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: #3296d1;
+			}
 		}
 	}
 
@@ -516,17 +528,26 @@ body {
 			line-height: 20px;
 		}
 
-		video {
+		&--video {
 			display: block;
-			width: 100%;
 			max-height: 300px;
-			object-fit: cover;
 			overflow: hidden;
 			border: 3px solid #fff;
-			@media (max-width: 768px) {
-				max-height: 400px;
+			&-1 {
+				@media (max-width: 768px) {
+					max-height: 400px;
+				}
+				@media (max-width: 500px) {
+					max-height: 300px;
+				}
 			}
 		}
+
+		video {
+			width: 100%;
+			object-fit: cover;
+		}
+
 		img {
 			display: block;
 			max-width: 100%;
@@ -554,15 +575,6 @@ body {
 			margin: 50px 0px 30px 0px;
 			font-size: 20px;
 		}
-	}
-
-	&__play-button {
-		position: absolute;
-		opacity: 0;
-		background-image: url("../../img/video-play.svg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 }
 
@@ -704,8 +716,8 @@ body {
 
 		@media (max-width: 992px) {
 			padding: 70px 35px 50px;
-			min-height: 1100px;
 		}
+
 		@media (max-width: 450px) {
 			padding: 70px 15px 50px;
 		}
@@ -728,16 +740,6 @@ body {
 		max-width: 70%;
 		@media (max-width: 768px) {
 			max-width: none;
-		}
-	}
-
-	&__cta {
-		color: #fff;
-		font-size: 16px;
-		line-height: 24px;
-		padding-right: 61%;
-		@media (max-width: 992px) {
-			padding-right: 0;
 		}
 	}
 
@@ -814,6 +816,11 @@ body {
 		@media (max-width: 600px) {
 			padding: 30px 20px;
 			margin-top: 46px;
+		}
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: #3296d1;
+			}
 		}
 	}
 }

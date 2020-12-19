@@ -778,42 +778,40 @@ $("form button[type=submit]").click(function () {
   });
   if (er == 0) {
     removeFormError(form);
-    /*
-			var messagehtml='';
-		if(form.hasClass('editprofile')){
-			var messagehtml='';
-		}
-		formLoad();
-		*/
+
+    var messagehtml = "";
+    if (form.hasClass("editprofile")) {
+      var messagehtml = "";
+    }
+    formLoad();
 
     //ОПТРАВКА ФОРМЫ
-    /*
-		function showResponse(html){
-			if(!form.hasClass('nomessage')){
-				showMessage(messagehtml);
-			}
-			if(!form.hasClass('noclear')){
-				clearForm(form);
-			}
-		}
-		var options={
-			success:showResponse
-		};
-			form.ajaxForm(options);
-		
 
-		setTimeout(function(){
-			if(!form.hasClass('nomessage')){
-				//showMessage(messagehtml);
-				showMessageByClass(ms);
-			}
-			if(!form.hasClass('noclear')){
-				clearForm(form);
-			}
-		},0);
+    function showResponse(html) {
+      if (!form.hasClass("nomessage")) {
+        showMessage(messagehtml);
+      }
+      if (!form.hasClass("noclear")) {
+        clearForm(form);
+      }
+    }
+    var options = {
+      success: showResponse,
+    };
+    form.ajaxForm(options);
 
-		return false;
-		*/
+    setTimeout(function () {
+      if (!form.hasClass("nomessage")) {
+        //showMessage(messagehtml);
+        showMessageByClass(ms);
+      }
+      if (!form.hasClass("noclear")) {
+        clearForm(form);
+      }
+    }, 0);
+
+    // return false;
+
     if (ms != null && ms != "") {
       showMessageByClass(ms);
       return false;

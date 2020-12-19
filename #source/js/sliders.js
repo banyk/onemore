@@ -51,7 +51,7 @@ if ($(".slider-certificates").length > 0) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          adaptiveHeight: true,
+          adaptiveHeight: false,
         },
       },
     ],
@@ -82,7 +82,7 @@ if ($(".content-reviews__slider").length > 0) {
       {
         breakpoint: 768,
         settings: {
-          adaptiveHeight: true,
+          adaptiveHeight: false,
         },
       },
     ],

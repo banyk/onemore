@@ -1,0 +1,26 @@
+.wp {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 50;
+	transform: translateX(150%);
+	transition: transform 0.5s ease 1s;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__link {
+		display: inline-block;
+		width: 45px;
+		height: 45px;
+		background: url("../img/whatsapp/whatsapp.svg") #fff center / contain no-repeat;
+	}
+	&._active {
+		transform: translateX(0%);
+	}
+}
