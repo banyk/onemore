@@ -492,7 +492,7 @@ body {
 
 .item-reviews {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
 	padding: 0px 25px;
 	color: #fff;
@@ -531,6 +531,9 @@ body {
 		video {
 			width: 100%;
 			object-fit: cover;
+			@media (min-width: 768px) {
+				height: 300px;
+			}
 		}
 
 		img {
@@ -669,7 +672,11 @@ body {
 //====================================================================================================
 
 .business {
-	padding: 0px 0px 130px 0px;
+	padding: 0px 0px 90px 0px;
+
+	@media (max-width: 500px) {
+		padding: 0px 0px 50px 0px;
+	}
 
 	&__body {
 		position: relative;
@@ -787,16 +794,6 @@ body {
 		z-index: 5;
 		font-size: 25px;
 		color: #fff;
-
-		// @media (min-width: 992px) {
-		// 	&:hover {
-		// 		opacity: 0.5;
-		// 	}
-		// }
-		svg {
-			margin-right: 15px;
-		}
-
 		&:not(:last-child) {
 			margin-bottom: 45px;
 		}
