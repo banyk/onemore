@@ -781,9 +781,11 @@ body {
 		opacity: 0.7;
 	}
 	&__item {
+		width: 100%;
 		position: relative;
 		z-index: 5;
 		display: flex;
+		align-items: center;
 		font-size: 25px;
 		color: #fff;
 		svg {
